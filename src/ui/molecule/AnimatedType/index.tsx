@@ -13,12 +13,12 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
         let currentIndex = 0;
         let timer: NodeJS.Timeout;
         const typeText = () => {
-            console.log(currentIndex)
             if (currentIndex <= props.message?.length) {
-                setText(props.message?.slice(0, currentIndex));
+                if (currentIndex != -1){
+                    setText(props.message?.slice(0, currentIndex));
+                }
                 currentIndex++;
                 timer = setTimeout(typeText, 300); // Ajuste a velocidade da digitação aqui (por exemplo, 300ms)
-                console.log("to aq")
             } else {
                 setIsTyping(false);
                 clearTimeout(timer);
