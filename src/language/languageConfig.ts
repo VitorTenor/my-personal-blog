@@ -16,4 +16,3 @@ i18next
         debug: false,
     }).then();
 
- export default i18next;

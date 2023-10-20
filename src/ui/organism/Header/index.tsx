@@ -5,13 +5,14 @@ import {AvailableLanguages} from "../../../language/languageUtil.ts";
 
 export default function Header() {
     const { i18n } = useTranslation();
-    const changeLanguage = (lng: AvailableLanguages) => {
+    const changeLanguage = () => {
+        const lng = i18n.language === AvailableLanguages.PT ? AvailableLanguages.EN : AvailableLanguages.PT;
         i18n.changeLanguage(lng).then(() => ({}));
     };
 
     return (
         <HeaderPanel>
-            <TranslateStyle onClick={() => changeLanguage(i18n.language === AvailableLanguages.PT ? AvailableLanguages.EN : AvailableLanguages.PT)} size={"2x"} />
+            <TranslateStyle onClick={() => changeLanguage()} size={"2x"} />
         </HeaderPanel>
     );
 }
