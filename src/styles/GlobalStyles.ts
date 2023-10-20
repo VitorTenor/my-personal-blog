@@ -23,7 +23,7 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 
-export const globalColor = {
-    primary: "#18d26e",
-    secondary: "#ffffff",
+export enum globalColor   {
+    primary = "#18d26e",
+    secondary = "#ffffff",
 }

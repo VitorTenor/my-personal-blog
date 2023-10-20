@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {ReactElement, useState} from "react";
 
 // @ts-ignore
 import reactLogo from "../../assets/react.svg";
@@ -8,7 +8,7 @@ import viteLogo from "../../assets/vite.svg";
 import "./styles.css";
 
 
-export default function ViteDefault() {
+export default function ViteDefault() : ReactElement {
     const [count, setCount] = useState(0)
 
     return (
