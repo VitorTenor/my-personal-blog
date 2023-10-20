@@ -14,8 +14,6 @@ export const GlobalStyles = createGlobalStyle`
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-image: url(${BG_IMAGE});
-    background-size: cover;
-    background-repeat: no-repeat;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
