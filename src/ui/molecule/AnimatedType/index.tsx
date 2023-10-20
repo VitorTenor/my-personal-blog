@@ -10,7 +10,7 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
     const [text, setText] = useState("");
     const [isTyping, setIsTyping] = useState(true);
     let message : string = "";
-    const { t } = useTranslation(); // Obtenha a função de tradução
+    const { t } = useTranslation();
 
     useEffect(() => {
         let currentIndex = 0;

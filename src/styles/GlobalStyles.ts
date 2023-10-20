@@ -21,3 +21,9 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-text-size-adjust: 100%;
   }
 `;
+
+
+export const globalColor = {
+    primary: "#18d26e",
+    secondary: "#ffffff",
+}

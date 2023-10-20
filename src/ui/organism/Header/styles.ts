@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Label from "../../atom/Label";
-import Translate from "../../atom/Translate";
+import IconAwesome from "../../atom/IconAwesome";
+import {globalColor} from "../../../styles/GlobalStyles.ts";
 
 export const HeaderPanel = styled.header`
   position: fixed;
@@ -8,8 +9,8 @@ export const HeaderPanel = styled.header`
   left: 0;
   right: 0;
   display: grid;
-  grid-template-columns: 1fr auto; 
-  align-items: center; 
+  grid-template-columns: 1fr auto;
+  align-items: center;
   height: 50px;
   padding: 5px 15px 5px 15px;
 `;
@@ -18,11 +19,16 @@ export const LabelStyled = styled(Label)`
   font-size: 35px;
   font-weight: 600;
   position: absolute;
-  color: #18d26e;
+  color: ${globalColor.primary};
   justify-self: center;
 `;
 
-export const TranslateStyle = styled(Translate)`
+export const TranslateStyle = styled(IconAwesome)`
   justify-self: right;
-  color: #ffff;
+  color: ${globalColor.secondary};
+
+  &:hover {
+    color: ${globalColor.primary};
+    cursor: pointer;
+  }
 `;

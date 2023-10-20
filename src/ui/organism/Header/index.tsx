@@ -1,6 +1,7 @@
 import {HeaderPanel, TranslateStyle} from "./styles.ts";
 import {useTranslation} from "react-i18next";
 import {AvailableLanguages} from "../../../language/languageUtil.ts";
+import {faLanguage} from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Header() {
@@ -12,7 +13,7 @@ export default function Header() {
 
     return (
         <HeaderPanel>
-            <TranslateStyle onClick={() => changeLanguage()} size={"2x"} />
+            <TranslateStyle onClick={() => changeLanguage()} size={"2x"} icon={faLanguage} />
         </HeaderPanel>
     );
 }

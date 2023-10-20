@@ -9,17 +9,17 @@ interface AnimatedParagraphProps {
 
 function AnimatedParagraph(props: AnimatedParagraphProps): ReactElement {
     const shakeAnimation = useSpring({
-        from: { transform: "translate(10px, 0px)" },
+        from: { transform: "translate(50px, 30px)" },
         to: { transform: "translate(0px, 0px)" },
         config: { ...config.default, duration: 400 },
-        reset: true, // Define para reverter para o estado inicial
+        reset: true,
         reverse: false,
     });
 
     return (
-        <animated.p style={shakeAnimation}>
+        <animated.div style={shakeAnimation}>
             {props.element ? props.element : <Paragraph message={props.message ? props.message : ""} />}
-        </animated.p>
+        </animated.div>
     );
 }
 
