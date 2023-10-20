@@ -1,13 +1,11 @@
-import {GlobalStyles} from "./styles/GlobalStyles.ts";
 import Routes from "./Routes.tsx";
-import Header from "./ui/organism/Header";
+import Layout from "./pages/layout";
 
 function App() {
 
     return (
         <>
-            <GlobalStyles/>
-            <Header />
+            <Layout />
             <Routes />
         </>
     )
