@@ -1,10 +1,17 @@
-import { HeaderPanel, TranslateStyle} from "./styles.ts";
+import {HeaderPanel, TranslateStyle} from "./styles.ts";
+import {useTranslation} from "react-i18next";
+import {AvailableLanguages} from "../../../language/languageUtil.ts";
+
 
 export default function Header() {
+    const { i18n } = useTranslation();
+    const changeLanguage = (lng: AvailableLanguages) => {
+        i18n.changeLanguage(lng).then(() => ({}));
+    };
+
     return (
         <HeaderPanel>
-            {/*<LabelStyled message={"< vitor tenorio />"}/>*/}
-            <TranslateStyle size={"2x"} onClick={() => {}}/>
+            <TranslateStyle onClick={() => changeLanguage(i18n.language === AvailableLanguages.PT ? AvailableLanguages.EN : AvailableLanguages.PT)} size={"2x"} />
         </HeaderPanel>
     );
 }

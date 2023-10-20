@@ -10,7 +10,7 @@ export default function MainPage() {
                 <>
                     <LabelName message={"< vitor tenorio />"}/>
                     <br />
-                    <AnimatedType message={"Software Developer"} />
+                    <AnimatedType message={('profession')} />
                 </>
                 }
             />

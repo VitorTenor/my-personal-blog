@@ -1,8 +1,9 @@
 import Routes from "./Routes.tsx";
 import Layout from "./pages/layout";
 
-function App() {
+import "./language/languageConfig.ts"
 
+function App() {
     return (
         <>
             <Layout />

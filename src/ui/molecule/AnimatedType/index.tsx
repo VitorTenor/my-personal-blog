@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { LabelType } from "./styles.tsx";
+import {useTranslation} from "react-i18next";
 
 interface AnimatedTypeProps {
     message: string;
@@ -8,14 +9,18 @@ interface AnimatedTypeProps {
 const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
     const [text, setText] = useState("");
     const [isTyping, setIsTyping] = useState(true);
+    let message : string = "";
+    const { t } = useTranslation(); // Obtenha a função de tradução
 
     useEffect(() => {
         let currentIndex = 0;
         let timer: NodeJS.Timeout;
+
         const typeText = () => {
-            if (currentIndex <= props.message?.length) {
+            message = t(props.message);
+            if (currentIndex <= message.length) {
                 if (currentIndex != -1){
-                    setText(props.message?.slice(0, currentIndex));
+                    setText(message.slice(0, currentIndex));
                     currentIndex++;
                     timer = setTimeout(typeText, 300); // Ajuste a velocidade da digitação aqui (por exemplo, 300ms)
                 } else {
@@ -30,30 +35,31 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
         };
 
         const eraseText = () => {
-
+            message = t(props.message);
             if (currentIndex >= 0) {
-                setText(props.message?.slice(0, currentIndex));
+                setText(message.slice(0, currentIndex));
                 currentIndex--;
                 timer = setTimeout(eraseText, 300); // Ajuste a velocidade da exclusão aqui (por exemplo, 300ms)
             } else {
                 setIsTyping(true);
                 clearTimeout(timer);
+
                 timer = setTimeout(typeText, 1000); // Espera antes de começar a digitar novamente
             }
         };
 
-        if (props.message && isTyping) {
+        if (message && isTyping) {
             typeText();
         } else {
-            setText(text);
+            setText("");
             eraseText();
         }
 
         return () => {
+            message = t(props.message);
             clearTimeout(timer);
         };
-    }, [props.message]);
-
+    }, [message]);
     return (
         <>
             <LabelType message={text} />
