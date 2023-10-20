@@ -5,7 +5,6 @@ export default function Footer() : ReactElement {
 
     return (
         <FooterPanel>
-            aaaa
         </FooterPanel>
     )
 }

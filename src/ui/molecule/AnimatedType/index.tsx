@@ -22,7 +22,7 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
                 if (currentIndex != -1){
                     setText(message.slice(0, currentIndex));
                     currentIndex++;
-                    timer = setTimeout(typeText, 300); // Ajuste a velocidade da digitação aqui (por exemplo, 300ms)
+                    timer = setTimeout(typeText, 100); // Ajuste a velocidade da digitação aqui (por exemplo, 300ms)
                 } else {
                     currentIndex++;
                     typeText();
@@ -30,7 +30,7 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
             } else {
                 setIsTyping(false);
                 clearTimeout(timer);
-                timer = setTimeout(eraseText, 1000); // Espera antes de começar a apagar
+                timer = setTimeout(eraseText, 2000); // Espera antes de começar a apagar
             }
         };
 
@@ -39,12 +39,12 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
             if (currentIndex >= 0) {
                 setText(message.slice(0, currentIndex));
                 currentIndex--;
-                timer = setTimeout(eraseText, 300); // Ajuste a velocidade da exclusão aqui (por exemplo, 300ms)
+                timer = setTimeout(eraseText, 200); // Ajuste a velocidade da exclusão aqui (por exemplo, 300ms)
             } else {
                 setIsTyping(true);
                 clearTimeout(timer);
 
-                timer = setTimeout(typeText, 1000); // Espera antes de começar a digitar novamente
+                timer = setTimeout(typeText, 500); // Espera antes de começar a digitar novamente
             }
         };
 
