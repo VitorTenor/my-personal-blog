@@ -1,6 +1,11 @@
 import {useState} from "react";
-import viteLogo from "../../assets/vite.svg";
+
+// @ts-ignore
 import reactLogo from "../../assets/react.svg";
+// @ts-ignore
+import viteLogo from "../../assets/vite.svg";
+
+import "./styles.css";
 
 
 export default function ViteDefault() {

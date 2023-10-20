@@ -1,5 +1,9 @@
+import Label from "../../ui/atom/Label";
+
 export default function MainPage() {
     return (
-        <div>Hello World! </div>
+        <>
+            <Label message="Hello World!"/>
+        </>
     );
 }
