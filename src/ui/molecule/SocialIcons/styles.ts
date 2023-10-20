@@ -14,4 +14,8 @@ export const SocialIconsStyled = styled.div`
   .icon:hover {
     color: ${globalColor.primary};
   }
+  
+    @media (max-width: 550px) {
+      padding: 15px 50px 15px 50px;
+    }
 `;

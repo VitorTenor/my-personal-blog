@@ -7,5 +7,9 @@ export const LabelName = styled(Label)`
   font-weight: 600;
   color:  ${globalColor.primary};
   justify-self: center;
+  
+  @media (max-width: 550px) {
+    font-size: 40px;
+  }
 `;
 
