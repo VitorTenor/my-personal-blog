@@ -7,6 +7,7 @@ export default function MainPage(): ReactElement {
     return (
         <MainPageStyles>
             <Section1 id={"section1"}/>
+            <Section1 id={"section2"}/>
         </MainPageStyles>
     );
 }
