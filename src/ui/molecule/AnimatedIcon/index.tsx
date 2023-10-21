@@ -3,6 +3,7 @@ import { animated, useSpring } from "react-spring";
 
 interface AnimatedIconProps {
     icon: ReactElement;
+    onClick?: () => void;
 }
 
 export default function AnimatedIcon(props: AnimatedIconProps): ReactElement {
@@ -14,7 +15,7 @@ export default function AnimatedIcon(props: AnimatedIconProps): ReactElement {
     });
 
     return (
-        <animated.div style={shakeAnimation}>
+        <animated.div style={shakeAnimation} onClick={props.onClick}>
             {props.icon}
         </animated.div>
     );
