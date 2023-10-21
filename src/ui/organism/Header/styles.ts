@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Label from "../../atom/Label";
 import IconAwesome from "../../atom/IconAwesome";
 import {globalColor} from "../../../styles/GlobalStyles.ts";
 
