@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 
-export const MainPageStyled = styled.div`
-  section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+export const MainPageStyles = styled.div`
+  section {
+    padding: 10px 10px 10px 10px;
     height: 100vh;
+    display: flex;
   }
 `;
 

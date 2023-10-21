@@ -15,14 +15,6 @@ export const HeaderPanel = styled.header`
   padding: 5px 15px 5px 15px;
 `;
 
-export const LabelStyled = styled(Label)`
-  font-size: 35px;
-  font-weight: 600;
-  position: absolute;
-  color: ${globalColor.primary};
-  justify-self: center;
-`;
-
 export const TranslateStyle = styled(IconAwesome)`
   justify-self: right;
   color: ${globalColor.secondary};

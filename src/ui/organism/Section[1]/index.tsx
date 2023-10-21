@@ -5,13 +5,13 @@ import SocialIcons from "../../molecule/SocialIcons";
 import AnimatedIcon from "../../molecule/AnimatedIcon";
 import {faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import {scrollTo} from "../../../util/Scroll/scroll.ts";
-import {ChevronDownIcon, LabelName} from "./styles.ts";
+import {ChevronDownIcon, LabelName, SectionStyles} from "./styles.ts";
 import {SectionProps} from "../../../util/interface.ts";
 
 
 export default function Section1(props: SectionProps): ReactElement {
     return (
-        <section id={props.id}>
+        <SectionStyles id={props.id}>
             <AnimatedParagraph
                 element={
                     <>
@@ -27,6 +27,6 @@ export default function Section1(props: SectionProps): ReactElement {
                     </>
                 }
             />
-        </section>
+        </SectionStyles>
     );
 }
