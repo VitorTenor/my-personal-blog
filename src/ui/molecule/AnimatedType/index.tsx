@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect, ReactElement} from "react";
 import { LabelType } from "./styles.tsx";
 import {useTranslation} from "react-i18next";
 
@@ -6,7 +6,7 @@ interface AnimatedTypeProps {
     messages: string[];
 }
 
-const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
+export default function AnimatedType (props : AnimatedTypeProps) : ReactElement {
     const [text, setText] = useState("");
     const [isTyping, setIsTyping] = useState(true);
     let message : string = "";
@@ -78,4 +78,3 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
     );
 };
 
-export default AnimatedType;
