@@ -1,13 +1,13 @@
 import {ReactElement} from "react";
 
 import {MainPageStyles} from "./styles.ts";
-import Section1 from "../../ui/organism/Section[1]";
+import Home from "../../ui/organism/Sections/Home";
 
 export default function MainPage(): ReactElement {
     return (
         <MainPageStyles>
-            <Section1 id={"section1"}/>
-            <Section1 id={"section2"}/>
+            <Home id={"section1"}/>
+            <Home id={"section2"}/>
         </MainPageStyles>
     );
 }

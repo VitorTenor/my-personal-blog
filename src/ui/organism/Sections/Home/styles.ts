@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Label from "../../atom/Label";
-import {globalColor} from "../../../styles/GlobalStyles.ts";
-import IconAwesome from "../../atom/IconAwesome";
+import Label from "../../../atom/Label";
+import {globalColor} from "../../../../styles/GlobalStyles.ts";
+import IconAwesome from "../../../atom/IconAwesome";
 
-export const SectionStyles = styled.section`
+export const HomeStyles = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
