@@ -17,7 +17,7 @@ export default function Section1(props: SectionProps): ReactElement {
                     <>
                         <LabelName message={"< vitor tenorio />"}/>
                         <br/>
-                        <AnimatedType message={('profession')}/>
+                        <AnimatedType messages={[('profession'), ('study')]}/>
                         <br/>
                         <SocialIcons/>
                         <AnimatedIcon
