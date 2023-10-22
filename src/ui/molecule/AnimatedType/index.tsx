@@ -3,14 +3,14 @@ import { LabelType } from "./styles.tsx";
 import {useTranslation} from "react-i18next";
 
 interface AnimatedTypeProps {
-    messages: string[];
+    messages: any[];
 }
 
 export default function AnimatedType (props : AnimatedTypeProps) : ReactElement {
     const [text, setText] = useState("");
     const [isTyping, setIsTyping] = useState(true);
     let message : string = "";
-    const { t } = useTranslation();
+    const { t } : Function = useTranslation();
     let arrayIndex : number = 0;
 
     useEffect(() => {

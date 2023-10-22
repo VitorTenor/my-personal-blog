@@ -10,6 +10,8 @@ import {SectionProps} from "../../../util/interface.ts";
 
 
 export default function Section1(props: SectionProps): ReactElement {
+    const messages : string[] = ["profession", "study"];
+
     return (
         <SectionStyles id={props.id}>
             <AnimatedParagraph
@@ -17,7 +19,7 @@ export default function Section1(props: SectionProps): ReactElement {
                     <>
                         <LabelName message={"< vitor tenorio />"}/>
                         <br/>
-                        <AnimatedType messages={[('profession'), ('study')]}/>
+                        <AnimatedType messages={messages}/>
                         <br/>
                         <SocialIcons/>
                         <AnimatedIcon
