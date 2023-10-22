@@ -17,7 +17,7 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
         let currentIndex = 0;
         let timer: NodeJS.Timeout;
 
-        const typeText = () => {
+        const typeText = () : void  => {
             message = t(props.messages[arrayIndex]);
 
             if (currentIndex <= message.length) {
@@ -36,23 +36,27 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
             }
         };
 
-        const eraseText = () => {
+        const eraseText = () : void => {
             message = t(props.messages[arrayIndex]);
             if (currentIndex >= 0) {
                 setText(message.slice(0, currentIndex));
                 currentIndex--;
                 timer = setTimeout(eraseText, 200); // Ajuste a velocidade da exclusão aqui (por exemplo, 300ms)
             } else {
-                if (arrayIndex == props.messages.length - 1) {
-                    arrayIndex = 0;
-                } else {
-                    arrayIndex = arrayIndex + 1;
-                }
+                validateArrayIndex();
                 setIsTyping(true);
                 clearTimeout(timer);
                 timer = setTimeout(typeText, 500); // Espera antes de começar a digitar novamente
             }
         };
+
+        const validateArrayIndex = () : void => {
+            if (arrayIndex == props.messages.length - 1) {
+                arrayIndex = 0;
+            } else {
+                arrayIndex = arrayIndex + 1;
+            }
+        }
 
         if (message && isTyping) {
             typeText();
@@ -61,7 +65,7 @@ const AnimatedType: React.FC<AnimatedTypeProps> = (props) => {
             eraseText();
         }
 
-        return () => {
+        return () : void => {
             message = t(props.messages[arrayIndex]);
             clearTimeout(timer);
         };
