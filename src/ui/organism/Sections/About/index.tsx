@@ -1,16 +1,20 @@
 import { ReactElement } from 'react';
 import { SectionProps } from '../../../../util/interface';
 import { AboutStyles, ProfileImage, TextAbout, TitleAbout } from './styles';
+import { useTranslation } from 'react-i18next';
+
 // @ts-ignore
 import ME from '../../../../assets/me.png';
 
 export default function About(props: SectionProps): ReactElement {
+  const { t } = useTranslation();
+
   return (
     <>
       <AboutStyles id={props.id}>
         <ProfileImage src={ME} />
         <TextAbout>
-          <TitleAbout>Eaaai! Eu sou o Vitor</TitleAbout>
+          <TitleAbout>{t('welcome')}</TitleAbout>
           <p>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
