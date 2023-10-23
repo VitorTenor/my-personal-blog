@@ -8,7 +8,7 @@ export const AboutStyles = styled.section`
   flex-direction: row;
   align-items: center;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1600px) {
     flex-direction: column;
     width: 80%;
   }
@@ -17,7 +17,7 @@ export const AboutStyles = styled.section`
 export const ProfileImage = styled.img`
   margin-right: 100px;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1600px) {
     margin-right: 0px;
     zoom: 1.2;
   }
