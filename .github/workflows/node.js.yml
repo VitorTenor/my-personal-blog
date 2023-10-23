@@ -30,5 +30,4 @@ jobs:
         run: npm run deploy
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
