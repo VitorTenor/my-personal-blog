@@ -1,5 +1,3 @@
-
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -42,7 +40,6 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-
   a:hover {
     color: #747bff;
   }

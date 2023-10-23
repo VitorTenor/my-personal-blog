@@ -1,4 +1,4 @@
 export enum AvailableLanguages {
-    EN = 'en',
-    PT = 'pt',
+  EN = 'en',
+  PT = 'pt',
 }

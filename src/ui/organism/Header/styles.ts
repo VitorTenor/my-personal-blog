@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import IconAwesome from "../../atom/IconAwesome";
-import {globalColor} from "../../../styles/GlobalStyles.ts";
+import styled from 'styled-components';
+import IconAwesome from '../../atom/IconAwesome';
+import { globalColor } from '../../../styles/GlobalStyles.ts';
 
 export const HeaderPanel = styled.header`
   position: fixed;

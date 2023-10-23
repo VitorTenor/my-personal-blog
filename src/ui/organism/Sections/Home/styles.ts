@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import Label from "../../../atom/Label";
-import {globalColor} from "../../../../styles/GlobalStyles.ts";
-import IconAwesome from "../../../atom/IconAwesome";
+import styled from 'styled-components';
+import Label from '../../../atom/Label';
+import { globalColor } from '../../../../styles/GlobalStyles.ts';
+import IconAwesome from '../../../atom/IconAwesome';
 
 export const HomeStyles = styled.section`
   display: flex;
@@ -20,9 +20,7 @@ export const LabelName = styled(Label)`
   }
 `;
 
-
 export const ChevronDownIcon = styled(IconAwesome)`
   margin-top: 100px;
   color: ${globalColor.primary};
-
 `;

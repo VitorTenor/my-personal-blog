@@ -1,12 +1,10 @@
-import {ReactElement} from "react";
+import { ReactElement } from 'react';
 
 interface ParagraphProps {
-    message: string;
-    className?: string;
+  message: string;
+  className?: string;
 }
 
-export default function Paragraph(props : ParagraphProps) : ReactElement{
-    return (
-        <p className={props.className}>{props.message}</p>
-    );
+export default function Paragraph(props: ParagraphProps): ReactElement {
+  return <p className={props.className}>{props.message}</p>;
 }

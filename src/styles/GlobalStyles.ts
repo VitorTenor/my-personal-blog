@@ -1,9 +1,9 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 // @ts-ignore
-import BG_IMAGE from "../assets/backgroundImage.jpg";
+import BG_IMAGE from '../assets/backgroundImage.jpg';
 export enum globalColor {
-    primary = "#18d26e",
-    secondary = "#ffffff",
+  primary = '#18d26e',
+  secondary = '#ffffff',
 }
 export const GlobalStyles = createGlobalStyle`
   :root {
@@ -41,5 +41,3 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 `;
-
-

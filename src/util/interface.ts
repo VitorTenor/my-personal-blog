@@ -1,3 +1,3 @@
 export interface SectionProps {
-    id: string;
+  id: string;
 }

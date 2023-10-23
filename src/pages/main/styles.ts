@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const MainPageStyles = styled.div`
   section {
@@ -8,4 +7,3 @@ export const MainPageStyles = styled.div`
     display: flex;
   }
 `;
-
