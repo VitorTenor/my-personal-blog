@@ -936,14 +936,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   flex-direction: row;
   align-items: center;
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1500px) {
     flex-direction: column;
     width: 80%;
   }
 `,yE=ut.img`
   margin-right: 100px;
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1500px) {
     margin-right: 0px;
     zoom: 1.2;
   }
@@ -956,6 +956,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   font-size: 30px;
   color: ${tn.secondary};
 
+  @media (max-width: 1700px) {
+    font-size: 25px;
+  }
+
   @media (max-width: 550px) {
     margin-top: -30px;
     font-size: 20px;
@@ -964,6 +968,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   font-size: 60px;
   color: ${tn.primary};
 
+  @media (max-width: 1700px) {
+    font-size: 50px;
+  }
   @media (max-width: 550px) {
     font-size: 35px;
   }
