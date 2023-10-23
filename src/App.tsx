@@ -6,9 +6,8 @@ import Routes from './Routes.tsx';
 export default function App() {
   return (
     <>
-      <Layout>
-        <Routes />
-      </Layout>
+      <Layout />
+      <Routes />
     </>
   );
 }
