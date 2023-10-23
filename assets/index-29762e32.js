@@ -936,14 +936,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   flex-direction: row;
   align-items: center;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1600px) {
     flex-direction: column;
     width: 80%;
   }
 `,yE=ut.img`
   margin-right: 100px;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1600px) {
     margin-right: 0px;
     zoom: 1.2;
   }
