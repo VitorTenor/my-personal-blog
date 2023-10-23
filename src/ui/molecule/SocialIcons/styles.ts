@@ -4,11 +4,12 @@ import { globalColor } from '../../../styles/GlobalStyles.ts';
 export const SocialIconsStyled = styled.div`
   display: flex;
   justify-self: center;
-  justify-content: space-between;
+  justify-content: center;
 
   padding: 15px 120px 15px 120px;
 
   .icon {
+    margin: 0 20px 0 20px;
     color: ${globalColor.secondary};
   }
   .icon:hover {

@@ -2,12 +2,13 @@ import { ReactElement } from 'react';
 
 import { MainPageStyles } from './styles.ts';
 import Home from '../../ui/organism/Sections/Home';
+import About from '../../ui/organism/Sections/About/index.tsx';
 
 export default function MainPage(): ReactElement {
   return (
     <MainPageStyles>
-      <Home id={'section1'} />
-      <Home id={'section2'} />
+      <Home id={'home'} />
+      <About id={'about'} />
     </MainPageStyles>
   );
 }

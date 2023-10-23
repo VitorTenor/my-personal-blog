@@ -22,7 +22,7 @@ export default function Home(props: SectionProps): ReactElement {
             <br />
             <SocialIcons />
             <AnimatedIcon
-              onClick={() => scrollTo('#section2')}
+              onClick={() => scrollTo('#about')}
               icon={<ChevronDownIcon icon={faChevronDown} size={'3x'} />}
             />
           </>
