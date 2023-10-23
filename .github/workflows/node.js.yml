@@ -1,32 +1,24 @@
-name: Node.js CI
+name: deploy
 
 on:
   push:
-    branches: ['main']
-  pull_request:
-    branches: ['main']
+    branches:
+      - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Build and Deploy
-        run: npm run deploy
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          node-version: '18.x'
+      - name: Build web-app
+        run: |
+          npm ci
+          npm run deploy
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
