@@ -8,7 +8,9 @@ export const HomeStyles = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 `;
+
 export const LabelName = styled(Label)`
   font-size: 60px;
   font-weight: 600;

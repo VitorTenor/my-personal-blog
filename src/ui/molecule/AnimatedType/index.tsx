@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ReactElement } from 'react';
+import { useState, useEffect, ReactElement } from 'react';
 import { LabelType } from './styles.tsx';
 import { useTranslation } from 'react-i18next';
 

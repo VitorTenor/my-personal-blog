@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const MainPageStyles = styled.div`
   section {
     padding: 10px 10px 10px 10px;
-    height: 95vh;
+    height: 100vh;
     display: flex;
-    background-color: grey;
   }
 `;
