@@ -18,6 +18,7 @@ export default function Experience(props: SectionProps): ReactElement {
       <ProfessionalExperienceStyles>
         <TitleStyles>{t('professional_experience')}</TitleStyles>
         <ExperienceComponent childrens={[dev, infra]} />
+        <br />
       </ProfessionalExperienceStyles>
 
       <EducationStyles>

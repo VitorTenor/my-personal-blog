@@ -5,7 +5,8 @@ import BG_IMAGE from '../assets/backgroundImage.jpg';
 export enum globalColor {
   primary = '#18d26e',
   secondary = '#ffffff',
-  tertiary = 'hsla(0, 0%, 65%, 0.2);',
+  tertiary = 'hsla(0, 0%, 0%, 0.9)',
+  // 'hsla(0, 0%, 65%, 0.2);',
   quaternary = '#189fff',
 }
 
@@ -39,7 +40,7 @@ export const GlobalStyles = createGlobalStyle`
 
     /* Estilo da pista da barra de rolagem (track) */
     &::-webkit-scrollbar-track {
-      background-color: transparent; /* Defina a cor da pista como transparente */
+      background-color: black; /* Defina a cor da pista como transparente */
     }
   }
 `;
