@@ -18,7 +18,7 @@ export const TITLE_STYLE: CSSProperties = {
   fontWeight: '500',
   color: `${globalColor.quaternary}`,
   marginBottom: '10px',
-  marginLeft: '130px',
+  marginLeft: '60px',
   marginTop: '10px',
   display: 'flex',
 };
@@ -28,7 +28,7 @@ export const DATE_STYLE: CSSProperties = {
   fontWeight: '500',
   color: `${globalColor.secondary}`,
   marginBottom: '10px',
-  marginLeft: '150px',
+  marginLeft: '80px',
   marginTop: '10px',
   display: 'flex',
 };
@@ -38,7 +38,7 @@ export const COMPANY_STYLE: CSSProperties = {
   fontWeight: '500',
   color: `${globalColor.secondary}`,
   marginBottom: '10px',
-  marginLeft: '150px',
+  marginLeft: '80px',
   marginTop: '10px',
   display: 'flex',
 };
@@ -48,7 +48,7 @@ export const DESCRIPTION_STYLE: CSSProperties = {
   fontWeight: '500',
   color: `${globalColor.secondary}`,
   marginBottom: '10px',
-  marginLeft: '150px',
+  marginLeft: '80px',
   marginTop: '10px',
   display: 'flex',
 };

@@ -18,7 +18,7 @@ export const LabelName = styled(Label)`
   justify-self: center;
 
   @media (max-width: 550px) {
-    font-size: 40px;
+    font-size: 35px;
   }
 `;
 
