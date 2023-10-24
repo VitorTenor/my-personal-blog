@@ -22,6 +22,7 @@ export default function Experience(props: SectionProps): ReactElement {
 
       <EducationStyles>
         <TitleStyles>{t('academic_education')}</TitleStyles>
+        <ExperienceComponent childrens={[dev, infra]} />
       </EducationStyles>
     </ExperienceStyles>
   );

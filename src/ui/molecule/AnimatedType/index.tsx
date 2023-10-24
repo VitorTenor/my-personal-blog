@@ -2,7 +2,7 @@ import { useState, useEffect, ReactElement } from 'react';
 import { LabelType } from './styles.tsx';
 import { useTranslation } from 'react-i18next';
 import ColoredText from '../../atom/ColoredText/index.tsx';
-import { GlobalStyles, globalColor } from '../../../styles/GlobalStyles.ts';
+import { globalColor } from '../../../styles/GlobalStyles.ts';
 
 interface AnimatedTypeProps {
   messages: any[];
