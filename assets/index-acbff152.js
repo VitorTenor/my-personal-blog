@@ -1004,7 +1004,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     width: 100%;
   }
 `,IE=$e.div`
-  box-shadow: 0 4px 8px hsla(0, 0%, 65%, 0);
+  box-shadow: 0 4px 8px hsla(0, 0%, 65%, 0.1);
   width: 49.5%;
   border-radius: 30px;
   background-color: ${Le.tertiary};
