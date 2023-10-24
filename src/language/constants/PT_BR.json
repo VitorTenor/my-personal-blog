@@ -1,5 +1,7 @@
 {
-  "profession": "Desenvolvedor de Software",
-  "study": "Estudante de Engenharia de Software",
-  "welcome": "Eaaai! Eu sou o Vitor"
+  "profession": "desenvolvedor de software",
+  "study": "estudante de engenharia de software",
+  "welcome": "Eaaai! Eu sou o Vitor",
+  "professional_experience": "experiência profissional",
+  "academic_education": "formação acadêmica"
 }

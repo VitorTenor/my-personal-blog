@@ -29,16 +29,16 @@ export const ProfileImage = styled.img`
 `;
 
 export const TextAbout = styled.p`
-  font-size: 30px;
+  font-size: 25px;
   color: ${globalColor.secondary};
 
   @media (max-width: 1700px) {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   @media (max-width: 550px) {
     margin-top: -30px;
-    font-size: 20px;
+    font-size: 15px;
   }
 `;
 

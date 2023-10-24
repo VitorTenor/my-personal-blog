@@ -13,7 +13,7 @@ export const HomeStyles = styled.section`
 
 export const LabelName = styled(Label)`
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 500;
   color: ${globalColor.primary};
   justify-self: center;
 

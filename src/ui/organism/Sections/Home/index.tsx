@@ -16,7 +16,7 @@ export default function Home(props: SectionProps): ReactElement {
       <AnimatedParagraph
         element={
           <>
-            <LabelName message={'< vitor tenorio />'} />
+            <LabelName message={'< vitor tenório />'} />
             <br />
             <AnimatedType messages={messages} />
             <br />

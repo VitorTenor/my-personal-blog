@@ -4,7 +4,7 @@ import { globalColor } from '../../../styles/GlobalStyles.ts';
 
 export const LabelType = styled(Label)`
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   color: ${globalColor.secondary};
   justify-self: center;
 

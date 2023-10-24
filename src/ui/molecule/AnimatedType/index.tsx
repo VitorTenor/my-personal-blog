@@ -1,6 +1,8 @@
 import { useState, useEffect, ReactElement } from 'react';
 import { LabelType } from './styles.tsx';
 import { useTranslation } from 'react-i18next';
+import ColoredText from '../../atom/ColoredText/index.tsx';
+import { GlobalStyles, globalColor } from '../../../styles/GlobalStyles.ts';
 
 interface AnimatedTypeProps {
   messages: any[];
@@ -72,8 +74,24 @@ export default function AnimatedType(props: AnimatedTypeProps): ReactElement {
   }, [message]);
   return (
     <>
+      <ColoredText
+        message="~/"
+        style={{
+          color: `${globalColor.secondary}`,
+          fontSize: '27.5px',
+          fontWeight: 'bolder',
+        }}
+      />
       <LabelType message={text} />
-      {text == '' ? '.' : <LabelType message={'|'} />}
+      <ColoredText
+        message="|"
+        style={{
+          color: `${globalColor.secondary}`,
+          fontSize: '27.5px',
+          fontWeight: '300',
+          animation: 'blink 1.5s step-start infinite',
+        }}
+      />
     </>
   );
 }

@@ -5,11 +5,20 @@ import BG_IMAGE from '../assets/backgroundImage.jpg';
 export enum globalColor {
   primary = '#18d26e',
   secondary = '#ffffff',
+  tertiary = 'hsla(0, 0%, 65%, 0.2);',
+  quaternary = '#189fff',
 }
 
 export const GlobalStyles = createGlobalStyle`
   :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    @keyframes blink {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    
+    font-family: 'Fira Code', monospace;
 
     background-image: url(${BG_IMAGE});
 
