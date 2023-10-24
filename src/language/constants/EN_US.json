@@ -2,6 +2,44 @@
   "profession": "software developer",
   "study": "software engineering student",
   "welcome": "Hi There! I'm Vitor",
-  "professional_experience": "Professional Experience",
-  "academic_education": "Academic Education"
+  "professional_experience": "professional experience",
+  "academic_education": "academic education",
+  "experience_component": [
+    {
+      "path": "~/experience/dev",
+      "experience": [
+        {
+          "title": "software_developer",
+          "date": "2022 - present",
+          "company": "Boavista Tecnologia, Fortaleza, BRL",
+          "description": [
+            "Proficient in creating and maintaining applications using the Spring Boot framework. I have knowledge in JPA, JUnit Jupiter for testing, native queries, test-driven development, solid design principles, and PostgreSQL database management.",
+            "Actively involved in modernizing systems, including the creation of a new deployment system with Java 17 and the successful migration of a legacy Java 8 API to Java 17, significantly improving system efficiency and maintainability.",
+            "Developed dynamic and responsive user interfaces using technologies ranging from React to Angular."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "~/experience/infra",
+      "experience": [
+        {
+          "title": "infrastructure_analyst",
+          "date": "2022 - 2022",
+          "company": "Euroamerican, Jandira, BRL",
+          "description": [
+            "Maintenance of Windows servers, administration of Exchange, DHCP, DNS, backups, AD, firewalls, and proxies",
+            "Resolved day-to-day issues involving networks, user support, and file and application storage",
+            "Performed hardware and software installation/configuration, system migrations, and software tool updates"
+          ]
+        },
+        {
+          "title": "it_intern",
+          "date": "2021 - 2022",
+          "company": "Euroamerican, Jandira, BRL",
+          "description": []
+        }
+      ]
+    }
+  ]
 }

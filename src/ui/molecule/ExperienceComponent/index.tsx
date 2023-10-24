@@ -11,7 +11,7 @@ import {
   SPAN_STYLE,
   TITLE_PREFIX,
   TITLE_STYLE,
-} from './util';
+} from './container';
 
 interface ExperienceComponentProps {
   title: string;

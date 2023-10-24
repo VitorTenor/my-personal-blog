@@ -3,5 +3,43 @@
   "study": "estudante de engenharia de software",
   "welcome": "Eaaai! Eu sou o Vitor",
   "professional_experience": "experiência profissional",
-  "academic_education": "formação acadêmica"
+  "academic_education": "formação acadêmica",
+  "experience_component": [
+    {
+      "path": "~/experiencia/dev",
+      "experience": [
+        {
+          "title": "desenvolvedor_de_software",
+          "date": "2022 - presente",
+          "company": "Boavista Tecnologia, Fortaleza, BRL",
+          "description": [
+            "Proficiente na criação e manutenção de aplicativos usando o framework Spring Boot. Possuo conhecimento em JPA, JUnit Jupiter para testes, consultas nativas, desenvolvimento orientado a testes, princípios de design sólido e gerenciamento de banco de dados PostgreSQL",
+            "Participei ativamente da modernização de sistemas, incluindo a criação de um novo sistema de implantação com Java 17 e a migração bem-sucedida de uma API legada de Java 8 para Java 17, melhorando significativamente a eficiência e a manutenibilidade do sistema.",
+            "Desenvolvi interfaces de usuário dinâmicas e responsivas, utilizando desde React até Angular"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "~/experiencia/infra",
+      "experience": [
+        {
+          "title": "analista_de_infraestrutura",
+          "date": "2022 - 2022",
+          "company": "Euroamerican, Jandira, BRL",
+          "description": [
+            "Manutenção de servidores Windows, administração de Exchange, DHCP, DNS, backups, AD, firewalls e proxies",
+            "Solucionei problemas do dia a dia envolvendo redes, suporte a usuários e armazenamento de arquivos e aplicativos",
+            "Realizei instalação/configuração de hardware e software, migrações de sistemas e atualizações de ferramentas de software"
+          ]
+        },
+        {
+          "title": "estagiario_de_infraestrutura",
+          "date": "2021 - 2022",
+          "company": "Euroamerican, Jandira, BRL",
+          "description": []
+        }
+      ]
+    }
+  ]
 }
