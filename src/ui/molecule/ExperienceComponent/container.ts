@@ -21,6 +21,7 @@ export const TITLE_STYLE: CSSProperties = {
   marginLeft: '60px',
   marginTop: '10px',
   display: 'flex',
+  wordBreak: 'break-all',
 };
 
 export const DATE_STYLE: CSSProperties = {
