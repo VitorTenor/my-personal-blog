@@ -20,6 +20,9 @@ export const LabelName = styled(Label)`
   @media (max-width: 550px) {
     font-size: 35px;
   }
+  @media (max-width: 400px) {
+    font-size: 34px;
+  }
 `;
 
 export const ChevronDownIcon = styled(IconAwesome)`

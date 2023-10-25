@@ -10,5 +10,6 @@ export const LabelType = styled(Label)`
 
   @media (max-width: 550px) {
     font-size: 25px;
+    width: 70%;
   }
 `;

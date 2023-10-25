@@ -11,6 +11,7 @@ export enum globalColor {
 }
 
 export const GlobalStyles = createGlobalStyle`
+
   :root {
     @keyframes blink {
       0% { opacity: 0; }
@@ -23,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
 
     background-image: url(${BG_IMAGE});
 
-    
+
     /* Personalização do scroll */
     scrollbar-width: thin;
     scrollbar-color: ${globalColor.primary} ${globalColor.secondary};

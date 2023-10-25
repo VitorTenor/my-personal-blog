@@ -22,7 +22,7 @@ export const ProfessionalExperienceStyles = styled.div`
 
   @media (max-width: 1040px) {
     margin-bottom: 40px;
-    width: 100%;
+    width: 98%;
   }
 `;
 
@@ -35,13 +35,16 @@ export const EducationStyles = styled.div`
   height: 100%;
 
   @media (max-width: 1040px) {
-    width: 100%;
+    width: 98%;
   }
 `;
 
 export const TitleStyles = styled.h1`
   font-size: 35px;
   text-align: center;
-  font-height: 100;
   color: ${globalColor.secondary};
+
+  @media (max-width: 400px) {
+    font-size: 30px;
+  }
 `;

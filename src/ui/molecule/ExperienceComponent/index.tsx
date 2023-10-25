@@ -5,6 +5,7 @@ import {
   ColoredPath,
   ColoredTitle,
   ExperienceComponentStyles,
+  ExperienceStyles,
 } from './styles';
 import {
   COMPANY_PREFIX,
@@ -46,7 +47,7 @@ export default function ExperienceComponent(props: ExperienceProps) {
 
   const createExperience = (experience: ExperienceComponentProps) => {
     return (
-      <>
+      <ExperienceStyles>
         <br />
         <ColoredTitle message={TITLE_PREFIX + experience.title} />
         <ColoredDate message={DATE_PREFIX + experience.date} />
@@ -54,7 +55,7 @@ export default function ExperienceComponent(props: ExperienceProps) {
         {experience.description.map((description) =>
           createDescription(description),
         )}
-      </>
+      </ExperienceStyles>
     );
   };
 
