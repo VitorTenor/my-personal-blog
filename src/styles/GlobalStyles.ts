@@ -6,8 +6,8 @@ export enum globalColor {
   primary = '#18d26e',
   secondary = '#ffffff',
   tertiary = 'hsla(0, 0%, 0%, 0.9)',
-  // 'hsla(0, 0%, 65%, 0.2);',
   quaternary = '#189fff',
+  quinary = 'hsla(0, 0%, 65%, 0.2)',
 }
 
 export const GlobalStyles = createGlobalStyle`
