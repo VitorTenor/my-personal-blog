@@ -29,4 +29,4 @@ jobs:
         with:
           personal_token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: ./CNAME
+          cname: w2w.vitortenorio.com
