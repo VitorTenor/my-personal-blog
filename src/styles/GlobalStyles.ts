@@ -20,6 +20,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     
+
+    
     font-family: 'Fira Code', monospace;
 
     background-image: url(${BG_IMAGE});
@@ -43,5 +45,7 @@ export const GlobalStyles = createGlobalStyle`
     &::-webkit-scrollbar-track {
       background-color: black; /* Defina a cor da pista como transparente */
     }
+
+    overflow-x: hidden;
   }
 `;
