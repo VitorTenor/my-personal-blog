@@ -29,4 +29,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./dist
-          cname: www.vitor.com # Seu domínio personalizado
+          cname: w2w.vitor.com # Seu domínio personalizado
