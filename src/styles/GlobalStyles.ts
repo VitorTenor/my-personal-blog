@@ -18,9 +18,6 @@ export const GlobalStyles = createGlobalStyle`
       50% { opacity: 1; }
       100% { opacity: 0; }
     }
-
-    
-
     
     font-family: 'Fira Code', monospace;
 
