@@ -28,6 +28,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GH_PAGES_TOKEN }}
           publish_dir: ./dist
           cname: www.vitor.com # Seu domínio personalizado
