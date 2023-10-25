@@ -23,21 +23,21 @@ export const GlobalStyles = createGlobalStyle`
 
     background-image: url(${BG_IMAGE});
 
-
+    
     /* Personalização do scroll */
     scrollbar-width: thin;
     scrollbar-color: ${globalColor.primary} ${globalColor.secondary};
-
+    
     /* Estilo da barra de rolagem */
     &::-webkit-scrollbar {
       width: 10px;
     }
-
+    
     /* Estilo do polegar da barra de rolagem (thumb) */
     &::-webkit-scrollbar-thumb {
       background-color: ${globalColor.primary};
     }
-
+    
     /* Estilo da pista da barra de rolagem (track) */
     &::-webkit-scrollbar-track {
       background-color: black; /* Defina a cor da pista como transparente */

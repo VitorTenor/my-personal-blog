@@ -8,7 +8,7 @@ import Experience from '../../ui/organism/Sections/Experience/index.tsx';
 export default function MainPage(): ReactElement {
   return (
     <MainPageStyles>
-      <Home id={'home'} />
+      {/* <Home id={'home'} /> */}
       <About id={'about'} />
       <Experience id={'experience'} />
     </MainPageStyles>

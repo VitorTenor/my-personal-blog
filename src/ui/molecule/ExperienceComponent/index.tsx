@@ -1,16 +1,17 @@
-import { ExperienceComponentStyles } from './styles';
-import ColoredText from '../../atom/ColoredText';
+import {
+  ColoredCompany,
+  ColoredDate,
+  ColoredDescription,
+  ColoredPath,
+  ColoredTitle,
+  ExperienceComponentStyles,
+} from './styles';
 import {
   COMPANY_PREFIX,
-  COMPANY_STYLE,
   DATE_PREFIX,
-  DATE_STYLE,
   DESCRIPTION_PREFIX,
-  DESCRIPTION_STYLE,
-  PATH_STYLE,
   SPAN_STYLE,
   TITLE_PREFIX,
-  TITLE_STYLE,
 } from './container';
 
 interface ExperienceComponentProps {
@@ -32,14 +33,13 @@ export interface ExperienceProps {
 export default function ExperienceComponent(props: ExperienceProps) {
   const createDescription = (description: string) => {
     return (
-      <ColoredText
+      <ColoredDescription
         message={
           <div>
             <span style={SPAN_STYLE}>{DESCRIPTION_PREFIX}</span>
             {description}
           </div>
         }
-        style={DESCRIPTION_STYLE}
       />
     );
   };
@@ -48,18 +48,9 @@ export default function ExperienceComponent(props: ExperienceProps) {
     return (
       <>
         <br />
-        <ColoredText
-          message={TITLE_PREFIX + experience.title}
-          style={TITLE_STYLE}
-        />
-        <ColoredText
-          message={DATE_PREFIX + experience.date}
-          style={DATE_STYLE}
-        />
-        <ColoredText
-          message={COMPANY_PREFIX + experience.company}
-          style={COMPANY_STYLE}
-        />
+        <ColoredTitle message={TITLE_PREFIX + experience.title} />
+        <ColoredDate message={DATE_PREFIX + experience.date} />
+        <ColoredCompany message={COMPANY_PREFIX + experience.company} />
         {experience.description.map((description) =>
           createDescription(description),
         )}
@@ -71,7 +62,7 @@ export default function ExperienceComponent(props: ExperienceProps) {
     <ExperienceComponentStyles>
       {props.childrens.map((prop) => (
         <>
-          <ColoredText message={prop.path} style={PATH_STYLE} />
+          <ColoredPath message={prop.path} />
           {prop.experience.map((experience) => createExperience(experience))}
         </>
       ))}
