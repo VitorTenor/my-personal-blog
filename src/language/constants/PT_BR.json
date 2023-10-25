@@ -4,7 +4,7 @@
   "welcome": "Eaaai! Eu sou o Vitor",
   "professional_experience": "experiência profissional",
   "academic_education": "formação acadêmica",
-  "experience_component": [
+  "professional_experience_info": [
     {
       "path": "~/experiencia/dev",
       "experience": [
@@ -37,6 +37,36 @@
           "title": "estagiario_de_infraestrutura",
           "date": "2021 - 2022",
           "company": "Euroamerican, Jandira, BRL",
+          "description": []
+        }
+      ]
+    }
+  ],
+  "academic_education_info": [
+    {
+      "path": "~/escolaridade/graduacao",
+      "experience": [
+        {
+          "title": "engenharia_de_software",
+          "date": "2023 - 2024",
+          "company": "Uniamerica, BRL",
+          "description": []
+        },
+        {
+          "title": "analise_e_desenvolvimento_de_sistemas",
+          "date": "2021 - 2023",
+          "company": "Universidade Nove de Julho, São Paulo, BRL",
+          "description": []
+        }
+      ]
+    },
+    {
+      "path": "~/escolaridade/ensino_medio",
+      "experience": [
+        {
+          "title": "manutencao_e_suporte_em_informatica",
+          "date": "2018 - 2020",
+          "company": "Instituto Tecnico de Barueri, Barueri, BRL",
           "description": []
         }
       ]

@@ -4,7 +4,7 @@
   "welcome": "Hi There! I'm Vitor",
   "professional_experience": "professional experience",
   "academic_education": "academic education",
-  "experience_component": [
+  "professional_experience_info": [
     {
       "path": "~/experience/dev",
       "experience": [
@@ -37,6 +37,36 @@
           "title": "it_intern",
           "date": "2021 - 2022",
           "company": "Euroamerican, Jandira, BRL",
+          "description": []
+        }
+      ]
+    }
+  ],
+  "academic_education_info": [
+    {
+      "path": "~/academic/graduation",
+      "experience": [
+        {
+          "title": "software_engineer",
+          "date": "2023 - 2024",
+          "company": "Uniamerica, BRL",
+          "description": []
+        },
+        {
+          "title": "system_analysis_and_development",
+          "date": "2021 - 2023",
+          "company": "Universidade Nove de Julho, São Paulo, BRL",
+          "description": []
+        }
+      ]
+    },
+    {
+      "path": "~/academic/high_school",
+      "experience": [
+        {
+          "title": "it_maintenance_and_support",
+          "date": "2018 - 2020",
+          "company": "Instituto Tecnico de Barueri, Barueri, BRL",
           "description": []
         }
       ]

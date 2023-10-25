@@ -47,6 +47,7 @@ export default function ExperienceComponent(props: ExperienceProps) {
   const createExperience = (experience: ExperienceComponentProps) => {
     return (
       <>
+        <br />
         <ColoredText
           message={TITLE_PREFIX + experience.title}
           style={TITLE_STYLE}

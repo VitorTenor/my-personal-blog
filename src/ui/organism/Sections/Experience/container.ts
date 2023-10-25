@@ -1,45 +1,58 @@
 import { useTranslation } from 'react-i18next';
 
+export enum ExperienceType {
+  PROFESSIONAL = 'professional_experience_info',
+  ACADEMIC = 'academic_education_info',
+}
+
 export default function useContainer() {
   let { t } = useTranslation();
 
-  const dev = {
-    path: t('experience_component.0.path'),
-    experience: [
-      {
-        title: t('experience_component.0.experience.0.title'),
-        date: t('experience_component.0.experience.0.date'),
-        company: t('experience_component.0.experience.0.company'),
-        description: [
-          t('experience_component.0.experience.0.description.0'),
-          t('experience_component.0.experience.0.description.1'),
-          t('experience_component.0.experience.0.description.2'),
-        ],
-      },
-    ],
-  };
+  function getExperience(experienceType: ExperienceType) {
+    const lengthComponent: number = parseInt(t(`${experienceType}.length`));
+    const experience_component = [];
 
-  const infra = {
-    path: t('experience_component.1.path'),
-    experience: [
-      {
-        title: t('experience_component.1.experience.0.title'),
-        date: t('experience_component.1.experience.0.date'),
-        company: t('experience_component.1.experience.0.company'),
-        description: [
-          t('experience_component.1.experience.0.description.0'),
-          t('experience_component.1.experience.0.description.1'),
-          t('experience_component.1.experience.0.description.2'),
-        ],
-      },
-      {
-        title: t('experience_component.1.experience.1.title'),
-        date: t('experience_component.1.experience.1.date'),
-        company: t('experience_component.1.experience.1.company'),
-        description: [],
-      },
-    ],
-  };
+    for (let i = 0; i < lengthComponent; i++) {
+      const path = t(`${experienceType}.${i}.path`);
+      const experience = [];
+      const lengthExperience: number = parseInt(
+        t(`${experienceType}.${i}.experience.length`),
+      );
 
-  return { dev, infra };
+      for (let j = 0; j < lengthExperience; j++) {
+        const title = t(`${experienceType}.${i}.experience.${j}.title`);
+        const date = t(`${experienceType}.${i}.experience.${j}.date`);
+        const company = t(`${experienceType}.${i}.experience.${j}.company`);
+
+        const description = [];
+        const lengthDescription: number = parseInt(
+          t(`${experienceType}.${i}.experience.${j}.description.length`),
+        );
+        for (let k = 0; k < lengthDescription; k++) {
+          description.push(
+            t(`${experienceType}.${i}.experience.${j}.description.${k}`),
+          );
+        }
+
+        const experienceItem = {
+          title,
+          date,
+          company,
+          description,
+        };
+
+        experience.push(experienceItem);
+      }
+
+      const component = {
+        path,
+        experience,
+      };
+
+      experience_component.push(component);
+    }
+    return experience_component;
+  }
+
+  return { getExperience };
 }
