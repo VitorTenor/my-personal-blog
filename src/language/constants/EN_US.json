@@ -71,5 +71,6 @@
         }
       ]
     }
-  ]
+  ],
+  "resume": "I'm a technology enthusiast who began exploring the world of programming at around 15 years old. Currently, I'm a software engineering student and work as a developer at one of the leading credit reconciliation companies in Brazil. My journey includes a degree in Systems Analysis, and I have prior experience in infrastructure. In my day-to-day work, I build robust applications using technologies such as Java with Spring Boot, React, Angular, JavaScript, and TypeScript. I always prioritize Test-Driven Development (TDD) and the SOLID principles to maintain code quality. In my spare time, my curiosity drives me to explore innovative technologies like Golang, Docker, Kubernetes, and Kafka to stay up-to-date with the latest advancements in the world of technology. My passion for solving problems through code motivates me to be in constant learning"
 }

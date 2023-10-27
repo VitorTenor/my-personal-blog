@@ -16,6 +16,7 @@ export const AboutStyles = styled.section`
 
 export const ProfileImage = styled.img`
   margin-right: 100px;
+  margin-top: 20px;
 
   @media (max-width: 1500px) {
     margin-right: 0px;
