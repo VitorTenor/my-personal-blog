@@ -32,7 +32,7 @@ export const ProfileImage = styled.img`
   }
 `;
 
-export const TextAbout = styled.p`
+export const TextAbout = styled.div`
   font-size: 25px;
   color: ${globalColor.secondary};
 
