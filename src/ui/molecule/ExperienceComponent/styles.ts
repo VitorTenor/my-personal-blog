@@ -14,8 +14,11 @@ export const ColoredPath = styled(ColoredText)`
   display: flex;
   word-break: break-word;
 
+  @media (max-width: 510px) {
+    font-size: 19px;
+  }
   @media (max-width: 400px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 `;
 
@@ -27,8 +30,12 @@ export const ColoredTitle = styled(ColoredText)`
   display: flex;
   word-break: break-word;
 
-  @media (max-width: 400px) {
+  @media (max-width: 510px) {
     font-size: 18px;
+    margin-left: -4%;
+  }
+  @media (max-width: 400px) {
+    font-size: 16px;
     margin-left: -4%;
   }
 `;
@@ -69,8 +76,9 @@ export const ExperienceStyles = styled.div`
   }
   @media (max-width: 510px) {
     margin-left: 10%;
+    font-size: 15px;
   }
   @media (max-width: 400px) {
-    font-size: 15px;
+    font-size: 13px;
   }
 `;

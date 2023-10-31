@@ -44,7 +44,10 @@ export const TitleStyles = styled.h1`
   text-align: center;
   color: ${globalColor.secondary};
 
-  @media (max-width: 400px) {
+  @media (max-width: 510px) {
     font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 25px;
   }
 `;
