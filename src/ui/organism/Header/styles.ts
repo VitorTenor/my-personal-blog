@@ -22,4 +22,11 @@ export const TranslateStyle = styled(IconAwesome)`
     color: ${globalColor.primary};
     cursor: pointer;
   }
+  @media (max-width: 510px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 `;
