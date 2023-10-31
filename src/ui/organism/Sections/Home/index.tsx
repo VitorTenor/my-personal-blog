@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import AnimatedParagraph from '../../../molecule/AnimatedParagraph';
 import AnimatedType from '../../../molecule/AnimatedType';
 import SocialIcons from '../../../molecule/SocialIcons';
 import AnimatedIcon from '../../../molecule/AnimatedIcon';
