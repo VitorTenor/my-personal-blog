@@ -845,7 +845,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   grid-template-columns: 1fr auto;
   align-items: center;
   height: 50px;
-  max-width: 85%;
   padding: 5px 15px 5px 15px;
 `,p3=le(Wd)`
   justify-self: right;
