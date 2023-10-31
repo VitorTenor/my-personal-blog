@@ -10,7 +10,7 @@ export const AboutStyles = styled.section`
 
   @media (max-width: 1500px) {
     flex-direction: column;
-    width: 80%;
+    width: 88%;
   }
 `;
 
@@ -27,6 +27,9 @@ export const ProfileImage = styled.img`
     margin-top: -30px;
     zoom: 0.8;
   }
+  @media (max-width: 450px) {
+    zoom: 0.6;
+  }
 `;
 
 export const TextAbout = styled.p`
@@ -41,6 +44,9 @@ export const TextAbout = styled.p`
     margin-top: -30px;
     font-size: 15px;
   }
+  @media (max-width: 450px) {
+    font-size: 13px;
+  }
 `;
 
 export const TitleAbout = styled.h1`
@@ -52,5 +58,8 @@ export const TitleAbout = styled.h1`
   }
   @media (max-width: 550px) {
     font-size: 35px;
+  }
+  @media (max-width: 450px) {
+    font-size: 28px;
   }
 `;

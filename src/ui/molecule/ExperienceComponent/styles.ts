@@ -12,6 +12,7 @@ export const ColoredPath = styled(ColoredText)`
   font-size: 20px;
   font-weight: 400;
   display: flex;
+  word-break: break-word;
 
   @media (max-width: 400px) {
     font-size: 18px;

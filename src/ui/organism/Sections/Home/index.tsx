@@ -13,20 +13,14 @@ export default function Home(props: SectionProps): ReactElement {
 
   return (
     <HomeStyles id={props.id}>
-      <AnimatedParagraph
-        element={
-          <>
-            <LabelName message={'< vitor tenório />'} />
-            <br />
-            <AnimatedType messages={messages} />
-            <br />
-            <SocialIcons />
-            <AnimatedIcon
-              onClick={() => scrollTo('#about')}
-              icon={<ChevronDownIcon icon={faChevronDown} size={'3x'} />}
-            />
-          </>
-        }
+      <LabelName message={'< vitor tenório />'} />
+      <br />
+      <AnimatedType messages={messages} />
+      <br />
+      <SocialIcons />
+      <AnimatedIcon
+        onClick={() => scrollTo('#about')}
+        icon={<ChevronDownIcon icon={faChevronDown} size={'3x'} />}
       />
     </HomeStyles>
   );

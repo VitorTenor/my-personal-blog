@@ -12,20 +12,34 @@ export const HomeStyles = styled.section`
 `;
 
 export const LabelName = styled(Label)`
-  font-size: 60px;
+  font-size: 65px;
   font-weight: 500;
   color: ${globalColor.primary};
   justify-self: center;
 
+  @media (max-width: 750px) {
+    font-size: 55px;
+  }
+  @media (max-width: 650px) {
+    font-size: 45px;
+  }
   @media (max-width: 550px) {
     font-size: 35px;
   }
-  @media (max-width: 400px) {
-    font-size: 34px;
+
+  @media (max-width: 415px) {
+    font-size: 28px;
+  }
+  @media (max-width: 340px) {
+    font-size: 24px;
   }
 `;
 
 export const ChevronDownIcon = styled(IconAwesome)`
   margin-top: 100px;
   color: ${globalColor.primary};
+
+  @media (max-width: 550px) {
+    font-size: 1.8rem;
+  }
 `;
