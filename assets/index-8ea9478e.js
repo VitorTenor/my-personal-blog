@@ -1086,8 +1086,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   text-align: center;
   color: ${Ae.secondary};
 
-  @media (max-width: 400px) {
+  @media (max-width: 510px) {
     font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 25px;
   }
 `,UE=le.div`
   padding: 0 15px 0 15px;
@@ -1099,8 +1102,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   display: flex;
   word-break: break-word;
 
+  @media (max-width: 510px) {
+    font-size: 19px;
+  }
   @media (max-width: 400px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 `,BE=le(ir)`
   margin-left: -8%;
@@ -1110,8 +1116,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   display: flex;
   word-break: break-word;
 
-  @media (max-width: 400px) {
+  @media (max-width: 510px) {
     font-size: 18px;
+    margin-left: -4%;
+  }
+  @media (max-width: 400px) {
+    font-size: 16px;
     margin-left: -4%;
   }
 `,HE=le(ir)`
@@ -1142,8 +1152,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   @media (max-width: 510px) {
     margin-left: 10%;
+    font-size: 15px;
   }
   @media (max-width: 400px) {
-    font-size: 15px;
+    font-size: 13px;
   }
 `,QE="./",GE="-> ",JE="-> ",XE="$ ",qE={color:`${Ae.quaternary}`};function hg(e){const t=r=>M.jsx(KE,{message:M.jsxs("div",{children:[M.jsx("span",{style:qE,children:XE}),r]})}),n=r=>M.jsxs(YE,{children:[M.jsx("br",{}),M.jsx(BE,{message:QE+r.title}),M.jsx(HE,{message:GE+r.date}),M.jsx(WE,{message:JE+r.company}),r.description.map(i=>t(i))]});return M.jsx(UE,{children:e.childrens.map(r=>M.jsxs(M.Fragment,{children:[M.jsx(VE,{message:r.path}),r.experience.map(i=>n(i))]}))})}var Lf=(e=>(e.PROFESSIONAL="professional_experience_info",e.ACADEMIC="academic_education_info",e))(Lf||{});function ZE(){let{t:e}=wo();function t(n){const r=parseInt(e(`${n}.length`)),i=[];for(let a=0;a<r;a++){const o=e(`${n}.${a}.path`),s=[],l=parseInt(e(`${n}.${a}.experience.length`));for(let c=0;c<l;c++){const f=e(`${n}.${a}.experience.${c}.title`),d=e(`${n}.${a}.experience.${c}.date`),y=e(`${n}.${a}.experience.${c}.company`),v=[],w=parseInt(e(`${n}.${a}.experience.${c}.description.length`));for(let m=0;m<w;m++)v.push(e(`${n}.${a}.experience.${c}.description.${m}`));const S={title:f,date:d,company:y,description:v};s.push(S)}const u={path:o,experience:s};i.push(u)}return i}return{getExperience:t}}function eC(e){const{t}=wo(),{getExperience:n}=ZE();return M.jsxs(DE,{id:e.id,children:[M.jsxs(jE,{children:[M.jsx(pg,{children:t("professional_experience")}),M.jsx(hg,{childrens:n(Lf.PROFESSIONAL)}),M.jsx("br",{})]}),M.jsxs(FE,{children:[M.jsx(pg,{children:t("academic_education")}),M.jsx(hg,{childrens:n(Lf.ACADEMIC)})]})]})}function tC(){return M.jsxs(B4,{children:[M.jsx(LE,{id:"home"}),M.jsx($E,{id:"about"}),M.jsx(eC,{id:"experience"})]})}function nC(){const e=N4([{path:"/",element:M.jsx(tC,{})}]);return M.jsx($4,{router:e})}function rC(){return M.jsxs(M.Fragment,{children:[M.jsx(A3,{}),M.jsx(nC,{})]})}qu.createRoot(document.getElementById("root")).render(M.jsx(pt.StrictMode,{children:M.jsx(rC,{})}));
