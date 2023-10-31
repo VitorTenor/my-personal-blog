@@ -11,7 +11,6 @@ export const HeaderPanel = styled.header`
   grid-template-columns: 1fr auto;
   align-items: center;
   height: 50px;
-  max-width: 85%;
   padding: 5px 15px 5px 15px;
 `;
 
