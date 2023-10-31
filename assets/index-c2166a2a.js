@@ -1028,7 +1028,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   @media (max-width: 450px) {
     zoom: 0.6;
   }
-`,AE=le.p`
+`,AE=le.div`
   font-size: 25px;
   color: ${Ae.secondary};
 
