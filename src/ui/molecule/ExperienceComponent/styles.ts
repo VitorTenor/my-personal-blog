@@ -65,7 +65,7 @@ export const ColoredSpan = styled(ColoredText)`
 export const ExperienceStyles = styled.div`
   color: ${globalColor.secondary};
   margin-left: 25%;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 
   @media (max-width: 1040px) {
