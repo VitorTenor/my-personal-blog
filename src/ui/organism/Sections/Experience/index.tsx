@@ -28,6 +28,7 @@ export default function Experience(props: SectionProps): ReactElement {
         <ExperienceComponent
           childrens={getExperience(ExperienceType.ACADEMIC)}
         />
+        <br />
       </EducationStyles>
     </ExperienceStyles>
   );
