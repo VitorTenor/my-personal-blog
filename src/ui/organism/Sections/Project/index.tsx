@@ -11,8 +11,8 @@ export default function Project(props: SectionProps): ReactElement {
 
   return (
     <ProjectStyles id={props.id}>
-      <TitleStyles>{t('project-title')}</TitleStyles>
       <BodyStyles>
+        <TitleStyles>{t('project-title')}</TitleStyles>
         <ProjectComponent props={getProjects()} />
       </BodyStyles>
     </ProjectStyles>

@@ -36,6 +36,9 @@ export const TextAbout = styled.div`
   font-size: 25px;
   color: ${globalColor.secondary};
 
+  p {
+    text-align: justify;
+  }
   @media (max-width: 1700px) {
     font-size: 22px;
   }
