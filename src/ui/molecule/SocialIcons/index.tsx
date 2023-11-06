@@ -8,6 +8,12 @@ import { SocialIconsStyled } from './styles.ts';
 import IconAwesome from '../../atom/IconAwesome';
 import { Link } from 'react-router-dom';
 import { ReactElement } from 'react';
+import {
+  GITHUB_LINK,
+  LINKEDIN_LINK,
+  INSTAGRAM_LINK,
+  WHATSAPP_LINK,
+} from '../../../util/constants.ts';
 
 interface IconProps {
   icon: any;
@@ -20,22 +26,22 @@ export default function SocialIcons(): ReactElement {
     {
       icon: faGithub,
       key: 'github',
-      url: 'https://github.com/VitorTenor',
+      url: `${GITHUB_LINK}`,
     },
     {
       icon: faLinkedin,
       key: 'linkedin',
-      url: 'https://www.linkedin.com/in/vitortelima/',
+      url: `${LINKEDIN_LINK}}`,
     },
     {
       icon: faInstagram,
       key: 'instagram',
-      url: 'https://instagram.com/vitortenorio_',
+      url: `${INSTAGRAM_LINK}`,
     },
     {
       icon: faWhatsapp,
       key: 'whatsapp',
-      url: 'https://api.whatsapp.com/send/?phone=%2B5511944730316&text&app_absent=0',
+      url: `${WHATSAPP_LINK}`,
     },
   ];
 

@@ -13,6 +13,5 @@ i18next
     },
     lng: 'pt', // Idioma padrão
     fallbackLng: 'en',
-    debug: true,
   })
   .then();
