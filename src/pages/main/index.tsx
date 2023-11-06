@@ -12,7 +12,8 @@ export default function MainPage(): ReactElement {
       <Home id={'home'} />
       <About id={'about'} />
       <Experience id={'experience'} />
-      <Project id={'project'} />
+      {/* TODO: RESPONSIVIDADE PROJECT */}
+      {/* <Project id={'project'} /> */}
     </MainPageStyles>
   );
 }

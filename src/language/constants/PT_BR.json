@@ -72,5 +72,44 @@
       ]
     }
   ],
-  "resume": "Sou um entusiasta da tecnologia que começou a explorar o mundo da programação com aproximadamente 15 anos. Atualmente, estou cursando engenharia de software e trabalho como desenvolvedor em uma das principais empresas de conciliação de crédito no Brasil. Minha trajetória inclui uma graduação em Análise e Desenvolvimento de Sistemas, e já tive experiência anterior em infraestrutura. No meu dia a dia, construo aplicações sólidas usando tecnologias como Java com Spring Boot, React, Angular, JavaScript e TypeScript. Sempre priorizo o Test-Driven Development (TDD) e os princípios SOLID para manter a qualidade do código. Nas horas vagas, sou movido pela curiosidade e dedico meu tempo a explorar tecnologias inovadoras, como Golang, Docker, Kubernetes e Kafka, para acompanhar as últimas novidades no mundo da tecnologia. Minha paixão por resolver problemas com código me motiva a estar em constante aprendizado."
+  "resume": "Sou um entusiasta da tecnologia que começou a explorar o mundo da programação com aproximadamente 15 anos. Atualmente, estou cursando engenharia de software e trabalho como desenvolvedor em uma das principais empresas de conciliação de crédito no Brasil. Minha trajetória inclui uma graduação em Análise e Desenvolvimento de Sistemas, e já tive experiência anterior em infraestrutura. No meu dia a dia, construo aplicações sólidas usando tecnologias como Java com Spring Boot, React, Angular, JavaScript e TypeScript. Sempre priorizo o Test-Driven Development (TDD) e os princípios SOLID para manter a qualidade do código. Nas horas vagas, sou movido pela curiosidade e dedico meu tempo a explorar tecnologias inovadoras, como Golang, Docker, Kubernetes e Kafka, para acompanhar as últimas novidades no mundo da tecnologia. Minha paixão por resolver problemas com código me motiva a estar em constante aprendizado.",
+  "project-title": "Projetos",
+  "project-info": [
+    {
+      "title": "music-streamer-api",
+      "description": "Esse é um repositorio de upload e download de músicas com funcionalidade de player permite aos usuários enviar, baixar e ouvir músicas.",
+      "uri_github": "/music-streamer-api",
+      "tag": [
+        "Java",
+        "JPA"
+      ]
+    },
+    {
+      "title": "my-personal-blog",
+      "description": "Esse repositório se refere a esse website.",
+      "uri_github": "/my-personal-blog",
+      "tag": [
+        "React",
+        "TypeScript"
+      ]
+    },
+    {
+      "title": "school-web",
+      "description": "Esse repositório é o meu primeiro projeto utilizando o React com integração ao backend.",
+      "uri_github": "/school-web",
+      "tag": [
+        "React",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "school-api",
+      "description": "Esse repositório é um back-end para o projeto school-web. A princípio ele foi desenvolvido em JavaScript, mas depois foi reescrito em Java.",
+      "uri_github": "/school-api",
+      "tag": [
+        "NodeJS",
+        "Sequlize"
+      ]
+    }
+  ]
 }

@@ -13,11 +13,12 @@ export const TitleStyles = styled.h1`
   font-size: 35px;
   text-align: center;
   color: ${globalColor.secondary};
+`;
 
-  @media (max-width: 510px) {
-    font-size: 30px;
-  }
-  @media (max-width: 400px) {
-    font-size: 25px;
-  }
+export const BodyStyles = styled.div`
+  box-shadow: 0 4px 8px ${globalColor.quinary};
+  border-radius: 30px;
+  background-color: ${globalColor.tertiary};
+  height: 100%;
+  width: 75%;
 `;

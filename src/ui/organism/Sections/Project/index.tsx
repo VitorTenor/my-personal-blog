@@ -1,11 +1,20 @@
 import { ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 import { SectionProps } from '../../../../util/interface';
-import { ProjectStyles, TitleStyles } from './styles';
+import { BodyStyles, ProjectStyles, TitleStyles } from './styles';
+import ProjectComponent from '../../../molecule/ProjectComponent';
+import useContainer from './container';
 
 export default function Project(props: SectionProps): ReactElement {
+  const { getProjects } = useContainer();
+  const { t } = useTranslation();
+
   return (
     <ProjectStyles id={props.id}>
-      <TitleStyles>Project</TitleStyles>
+      <TitleStyles>{t('project-title')}</TitleStyles>
+      <BodyStyles>
+        <ProjectComponent props={getProjects()} />
+      </BodyStyles>
     </ProjectStyles>
   );
 }
