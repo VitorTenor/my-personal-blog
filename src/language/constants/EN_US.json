@@ -107,8 +107,8 @@
       "description": "This repository is a backend for the school-web project. Initially, it was developed in JavaScript, but later it was rewritten in Java.",
       "uri_github": "/school-api",
       "tag": [
-        "NodeJS",
-        "Sequelize"
+        "Java",
+        "MariaDB"
       ]
     }
   ]
