@@ -13,6 +13,7 @@ export const ProjectComponentStyles = styled.div`
   }
 
   @media (max-width: 980px) {
+    padding: 10px 0px 10px 0px;
     flex-direction: column;
     align-items: center;
   }
