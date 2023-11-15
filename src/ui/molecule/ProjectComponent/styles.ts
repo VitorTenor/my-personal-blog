@@ -98,7 +98,7 @@ export const TagComponent = styled.div`
   @media (max-width: 510px) {
     margin-left: 5px;
   }
-  @media (max-width: 350px) {
+  @media (max-width: 600px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
