@@ -76,12 +76,22 @@
   "project-title": "projetos",
   "project-info": [
     {
+      "title": "notificator",
+      "description": "Esse é um repositorio de envio de notifições via email, utilizando um serviço de mensageria como gatilho do envio.",
+      "uri_github": "/notificator",
+      "tag": [
+        "SpringBoot",
+        "RabbitMQ"
+      ]
+    },
+    {
       "title": "music-streamer-api",
       "description": "Esse é um repositorio de upload e download de músicas com funcionalidade de player permite aos usuários enviar, baixar e ouvir músicas.",
       "uri_github": "/music-streamer-api",
       "tag": [
-        "Java",
-        "JPA"
+        "SpringBoot",
+        "JPA",
+        "PostgreSQL"
       ]
     },
     {
@@ -107,7 +117,7 @@
       "description": "Esse repositório é um back-end para o projeto school-web. A princípio ele foi desenvolvido em JavaScript, mas depois foi reescrito em Java.",
       "uri_github": "/school-api",
       "tag": [
-        "Java",
+        "SpringBoot",
         "MariaDB"
       ]
     }
