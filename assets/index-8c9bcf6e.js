@@ -1210,6 +1210,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 
   @media (max-width: 980px) {
+    padding: 10px 0px 10px 0px;
     flex-direction: column;
     align-items: center;
   }
