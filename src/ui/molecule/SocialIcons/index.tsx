@@ -2,7 +2,8 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
-  faWhatsapp,
+  faMailchimp,
+  faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
 import { SocialIconsStyled } from './styles.ts';
 import IconAwesome from '../../atom/IconAwesome';
@@ -12,8 +13,10 @@ import {
   GITHUB_LINK,
   LINKEDIN_LINK,
   INSTAGRAM_LINK,
-  WHATSAPP_LINK,
+  EMAIL_LINK
 } from '../../../util/constants.ts';
+import { faMailBulk, faMailReply, faVoicemail } from '@fortawesome/free-solid-svg-icons';
+import { faMailForward } from '@fortawesome/free-solid-svg-icons/faMailForward';
 
 interface IconProps {
   icon: any;
@@ -39,9 +42,9 @@ export default function SocialIcons(): ReactElement {
       url: `${INSTAGRAM_LINK}`,
     },
     {
-      icon: faWhatsapp,
-      key: 'whatsapp',
-      url: `${WHATSAPP_LINK}`,
+      icon: faMailReply,
+      key: 'email',
+      url: `${EMAIL_LINK}`,
     },
   ];
 
