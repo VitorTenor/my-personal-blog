@@ -1,22 +1,19 @@
 import {
   faGithub,
   faInstagram,
-  faLinkedin,
-  faMailchimp,
-  faWhatsapp
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
-import { SocialIconsStyled } from './styles.ts';
-import IconAwesome from '../../atom/IconAwesome';
-import { Link } from 'react-router-dom';
+import { faMailReply } from '@fortawesome/free-solid-svg-icons';
 import { ReactElement } from 'react';
+import { Link } from 'react-router-dom';
 import {
+  EMAIL_LINK,
   GITHUB_LINK,
-  LINKEDIN_LINK,
   INSTAGRAM_LINK,
-  EMAIL_LINK
+  LINKEDIN_LINK
 } from '../../../util/constants.ts';
-import { faMailBulk, faMailReply, faVoicemail } from '@fortawesome/free-solid-svg-icons';
-import { faMailForward } from '@fortawesome/free-solid-svg-icons/faMailForward';
+import IconAwesome from '../../atom/IconAwesome';
+import { SocialIconsStyled } from './styles.ts';
 
 interface IconProps {
   icon: any;
