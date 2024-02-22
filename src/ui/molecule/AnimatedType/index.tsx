@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import useContainer, { AnimatedTypeProps } from './container.tsx';
+import useContainer, { AnimatedTypeProps } from './container.ts';
 import {
   AnimatedTypeStyles,
   ColoredTextType,
