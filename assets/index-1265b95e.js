@@ -56,7 +56,7 @@ Error generating stack: `+a.message+`
 
     /* Personalização do scroll */
     scrollbar-width: thin;
-    scrollbar-color: ${"#18d26e"} ${"#ffffff"};
+    scrollbar-color: ${"#18d26e"} ${"hsla(0, 0%, 0%, 0.9)"};
     
     /* Estilo da barra de rolagem */
     &::-webkit-scrollbar {
