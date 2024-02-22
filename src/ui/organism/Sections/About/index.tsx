@@ -10,7 +10,6 @@ export default function About(props: SectionProps): ReactElement {
   const { t } = useTranslation();
 
   return (
-    <>
       <AboutStyles id={props.id}>
         <ProfileImage src={ME} />
         <TextAbout>
@@ -18,6 +17,5 @@ export default function About(props: SectionProps): ReactElement {
           <p>{t('resume')}</p>
         </TextAbout>
       </AboutStyles>
-    </>
   );
 }
