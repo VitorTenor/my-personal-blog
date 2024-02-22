@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
 
     /* Personalização do scroll */
     scrollbar-width: thin;
-    scrollbar-color: ${globalColor.primary} ${globalColor.secondary};
+    scrollbar-color: ${globalColor.primary} ${globalColor.tertiary};
     
     /* Estilo da barra de rolagem */
     &::-webkit-scrollbar {
