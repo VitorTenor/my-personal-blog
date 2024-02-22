@@ -1059,7 +1059,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   @media (max-width: 450px) {
     font-size: 28px;
   }
-`,VE=""+new URL("me-5207b88c.png",import.meta.url).href;function HE(e){const{t}=Ar();return T.jsx(T.Fragment,{children:T.jsxs(DE,{id:e.id,children:[T.jsx(FE,{src:VE}),T.jsxs(UE,{children:[T.jsx(BE,{children:t("welcome")}),T.jsx("p",{children:t("resume")})]})]})})}const WE=Q.section`
+`,VE=""+new URL("me-5207b88c.png",import.meta.url).href;function HE(e){const{t}=Ar();return T.jsxs(DE,{id:e.id,children:[T.jsx(FE,{src:VE}),T.jsxs(UE,{children:[T.jsx(BE,{children:t("welcome")}),T.jsx("p",{children:t("resume")})]})]})}const WE=Q.section`
   width: 90%;
   height: 150vh;
   margin: 0 auto;
