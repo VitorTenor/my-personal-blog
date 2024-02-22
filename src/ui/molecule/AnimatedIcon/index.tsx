@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
-import { animated, useSpring } from 'react-spring';
+import { animated } from 'react-spring';
+import useContainer from './container';
 
 interface AnimatedIconProps {
   icon: ReactElement;
@@ -7,13 +8,7 @@ interface AnimatedIconProps {
 }
 
 export default function AnimatedIcon(props: AnimatedIconProps): ReactElement {
-  const shakeAnimation = useSpring({
-    from: { transform: 'translate(-10px, 0px)' },
-    to: { transform: 'translate(10px, 0px)' },
-    config: { duration: 800 },
-    loop: { reverse: true },
-  });
-
+  const shakeAnimation = useContainer();
   return (
     <animated.div style={shakeAnimation} onClick={props.onClick}>
       {props.icon}
