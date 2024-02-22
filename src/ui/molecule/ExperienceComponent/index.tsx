@@ -11,25 +11,11 @@ import {
   COMPANY_PREFIX,
   DATE_PREFIX,
   DESCRIPTION_PREFIX,
+  ExperienceComponentProps,
+  ExperienceProps,
   SPAN_STYLE,
   TITLE_PREFIX,
 } from './container';
-
-interface ExperienceComponentProps {
-  title: string;
-  date: string;
-  company: string;
-  description: string[];
-}
-
-export interface ExperienceElementProps {
-  path: string;
-  experience: ExperienceComponentProps[];
-}
-
-export interface ExperienceProps {
-  childrens: ExperienceElementProps[];
-}
 
 export default function ExperienceComponent(props: ExperienceProps) {
   const createDescription = (description: string) => {
