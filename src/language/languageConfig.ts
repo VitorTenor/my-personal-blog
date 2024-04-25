@@ -1,17 +1,21 @@
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import { AvailableLanguages, getLanguage } from './languageService.ts';
 
-import translationEN from './constants/EN_US.json';
-import translationBR from './constants/PT_BR.json';
+const resources : {} = {
+  PT_BR: {
+    translation: await getLanguage(AvailableLanguages.PT_BR)
+  },
+  EN_US: {
+    translation: await getLanguage(AvailableLanguages.EN_US)
+  }
+}
 
 i18next
   .use(initReactI18next)
   .init({
-    resources: {
-      en: { translation: translationEN },
-      pt: { translation: translationBR },
-    },
-    lng: 'pt', // Idioma padrão
-    fallbackLng: 'en',
+    resources: resources,
+    lng: 'PT_BR',
+    fallbackLng: 'EN_US'
   })
   .then();

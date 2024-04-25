@@ -12,7 +12,7 @@ export default function Project(props: SectionProps): ReactElement {
   return (
     <ProjectStyles id={props.id}>
       <BodyStyles>
-        <TitleStyles>{t('project-title')}</TitleStyles>
+        <TitleStyles>{t('project_title')}</TitleStyles>
         <ProjectComponent props={getProjects()} />
       </BodyStyles>
     </ProjectStyles>
