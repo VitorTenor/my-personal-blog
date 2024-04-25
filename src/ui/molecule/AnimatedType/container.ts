@@ -23,7 +23,7 @@ export default function useContainer (props : AnimatedTypeProps) : string {
         if (currentIndex != -1) {
           setText(message.slice(0, currentIndex));
           currentIndex++;
-          timer = setTimeout(typeText, 100); // Ajuste a velocidade da digitação aqui (por exemplo, 300ms)
+          timer = setTimeout(typeText, 150); // Ajuste a velocidade da digitação aqui (por exemplo, 300ms)
         } else {
           currentIndex++;
           typeText();
@@ -31,7 +31,7 @@ export default function useContainer (props : AnimatedTypeProps) : string {
       } else {
         setIsTyping(false);
         clearTimeout(timer);
-        timer = setTimeout(eraseText, 2000); // Espera antes de começar a apagar
+        timer = setTimeout(eraseText, 1000); // Espera antes de começar a apagar
       }
     };
 
