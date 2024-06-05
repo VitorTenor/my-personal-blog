@@ -1015,6 +1015,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,UE=Q.img`
   margin-right: 100px;
   margin-top: 20px;
+  height: 400px;
+  width: 400px;
 
   @media (max-width: 1500px) {
     margin-right: 0px;
@@ -1059,7 +1061,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   @media (max-width: 450px) {
     font-size: 28px;
   }
-`,HE=""+new URL("me-5207b88c.png",import.meta.url).href;function WE(e){const{t}=Ar();return T.jsxs(FE,{id:e.id,children:[T.jsx(UE,{src:HE}),T.jsxs(BE,{children:[T.jsx(VE,{children:t("welcome")}),T.jsx("p",{children:t("resume")})]})]})}const KE=Q.section`
+`,HE=""+new URL("me-09daa907.png",import.meta.url).href;function WE(e){const{t}=Ar();return T.jsxs(FE,{id:e.id,children:[T.jsx(UE,{src:HE}),T.jsxs(BE,{children:[T.jsx(VE,{children:t("welcome")}),T.jsx("p",{children:t("resume")})]})]})}const KE=Q.section`
   width: 90%;
   height: 150vh;
   margin: 0 auto;
