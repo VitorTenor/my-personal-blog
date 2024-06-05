@@ -15,8 +15,6 @@ export const AboutStyles = styled.section`
 `;
 
 export const ProfileImage = styled.img`
-  width: 400px;
-  height: 400px;
   margin-right: 100px;
   margin-top: 20px;
 
