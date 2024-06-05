@@ -52,6 +52,7 @@ export const TextAbout = styled.div`
   }
 `;
 
+
 export const TitleAbout = styled.h1`
   font-size: 60px;
   color: ${globalColor.primary};
