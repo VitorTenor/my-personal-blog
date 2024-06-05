@@ -28,9 +28,12 @@ export const ProfileImage = styled.img`
   @media (max-width: 550px) {
     margin-top: -30px;
     zoom: 0.8;
+    margin-bottom: 20px;
   }
   @media (max-width: 450px) {
     zoom: 0.6;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 `;
 
