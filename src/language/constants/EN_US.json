@@ -1,6 +1,6 @@
 {
-  "profession": "software developer",
-  "study": "software engineering student",
+  "profession": "software engineer",
+  "study": "software engineer",
   "welcome": "Hi There! I'm Vitor",
   "professional_experience": "professional experience",
   "academic_education": "academic education",
@@ -72,9 +72,19 @@
       ]
     }
   ],
-  "resume": "I'm a technology enthusiast who began exploring the world of programming at around 15 years old. Currently, I'm a software engineering student and work as a developer at one of the leading credit reconciliation companies in Brazil. My journey includes a degree in Systems Analysis, and I have prior experience in infrastructure. In my day-to-day work, I build robust applications using technologies such as Java with Spring Boot, React, Angular, JavaScript, and TypeScript. I always prioritize Test-Driven Development (TDD) and the SOLID principles to maintain code quality. In my spare time, my curiosity drives me to explore innovative technologies like Golang, Docker, Kubernetes, and Kafka to stay up-to-date with the latest advancements in the world of technology. My passion for solving problems through code motivates me to be in constant learning.",
+  "resume": "I'm a technology enthusiast who began exploring the world of programming at around 15 years old. Currently, I'm postgraduate in software engineering and work as a developer at one of the leading credit reconciliation companies in Brazil. My journey includes a degree in Systems Analysis, and I have prior experience in infrastructure. In my day-to-day work, I build robust applications using technologies such as Java with Spring Boot, React, Angular, JavaScript, and TypeScript. I always prioritize Test-Driven Development (TDD) and the SOLID principles to maintain code quality. In my spare time, my curiosity drives me to explore innovative technologies and develop applications using functional programming principles in Golang, such as APIs and processors. I use databases like MongoDB and PostgreSQL, as well as RabbitMQ for queue management. My passion for solving problems through code motivates me to be in constant learning.",
   "project-title": "projects",
   "project-info": [
+    {
+      "title": "clean-architecture-example",
+      "description": "This is a example of clean architecture repository.",
+      "uri_github": "/springboot-clean-architecture-example",
+      "tag": [
+        "SpringBoot",
+        "Java 21",
+        "PostgreSQL"
+      ]
+    },
     {
       "title": "notificator",
       "description": "This is a repository for sending notifications via email, using a messaging service as a trigger for sending.",
