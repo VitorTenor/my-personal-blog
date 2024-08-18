@@ -8,26 +8,25 @@ import {
   TitleStyles,
 } from './styles';
 import ExperienceComponent from '../../../molecule/ExperienceComponent';
-import useContainer, { ExperienceType } from './container';
+import useContainer from './container';
+import EducationComponent from '../../../molecule/EducationComponent';
 
-export default function Experience(props: SectionProps): ReactElement {
+export default function ExperienceAndEducation(
+  props: SectionProps,
+): ReactElement {
   const { t } = useTranslation();
-  const { getExperience } = useContainer();
+  const { getExperience, getEducation } = useContainer();
   return (
     <ExperienceStyles id={props.id}>
       <ProfessionalExperienceStyles>
         <TitleStyles>{t('professional_experience')}</TitleStyles>
-        <ExperienceComponent
-          childrens={getExperience(ExperienceType.PROFESSIONAL)}
-        />
+        <ExperienceComponent children={getExperience()} />
         <br />
       </ProfessionalExperienceStyles>
 
       <EducationStyles>
         <TitleStyles>{t('academic_education')}</TitleStyles>
-        <ExperienceComponent
-          childrens={getExperience(ExperienceType.ACADEMIC)}
-        />
+        <EducationComponent children={getEducation()} />
         <br />
       </EducationStyles>
     </ExperienceStyles>

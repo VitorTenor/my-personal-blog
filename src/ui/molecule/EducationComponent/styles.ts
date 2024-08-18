@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import ColoredText from '../../atom/ColoredText';
 import { globalColor } from '../../../styles/GlobalStyles';
 
-export const ExperienceComponentStyles = styled.div`
+export const EducationComponentStyles = styled.div`
   padding: 0 15px 0 15px;
 `;
 
@@ -46,13 +46,6 @@ export const ColoredDate = styled(ColoredText)`
 `;
 
 export const ColoredCompany = styled(ColoredText)`
-  margin: 25px 0 0 15px;
-  color: ${globalColor.secondary};
-  display: flex;
-  word-break: break-word;
-`;
-
-export const ColoredWorkType = styled(ColoredText)`
   margin-bottom: 10px;
   display: flex;
   word-break: break-word;
@@ -68,7 +61,7 @@ export const ColoredSpan = styled(ColoredText)`
   color: ${globalColor.quaternary};
 `;
 
-export const ExperienceStyles = styled.div`
+export const EducationStyles = styled.div`
   color: ${globalColor.secondary};
   margin-left: 21%;
   font-size: 18px;

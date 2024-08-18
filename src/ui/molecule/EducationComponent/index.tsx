@@ -4,22 +4,20 @@ import {
   ColoredDescription,
   ColoredPath,
   ColoredTitle,
-  ColoredWorkType,
-  ExperienceComponentStyles,
-  ExperienceStyles,
+  EducationComponentStyles,
+  EducationStyles,
 } from './styles';
 import {
   COMPANY_PREFIX,
   DATE_PREFIX,
   DESCRIPTION_PREFIX,
-  ExperienceComponentProps,
-  ExperienceProps,
+  EducationComponentProps,
+  EducationProps,
   SPAN_STYLE,
   TITLE_PREFIX,
-  WORK_TYPE_PREFIX,
 } from './container';
 
-export default function ExperienceComponent(props: ExperienceProps) {
+export default function EducationComponent(props: EducationProps) {
   const createDescription = (description: string) => {
     return (
       <ColoredDescription
@@ -33,29 +31,28 @@ export default function ExperienceComponent(props: ExperienceProps) {
     );
   };
 
-  const createExperience = (experience: ExperienceComponentProps) => {
+  const createEducation = (experience: EducationComponentProps) => {
     return (
-      <ExperienceStyles>
+      <EducationStyles>
         <br />
         <ColoredTitle message={TITLE_PREFIX + experience.title} />
         <ColoredDate message={DATE_PREFIX + experience.date} />
-        <ColoredWorkType message={WORK_TYPE_PREFIX + experience.workType} />
+        <ColoredCompany message={COMPANY_PREFIX + experience.company} />
         {experience.description.map((description) =>
           createDescription(description),
         )}
-      </ExperienceStyles>
+      </EducationStyles>
     );
   };
 
   return (
-    <ExperienceComponentStyles>
+    <EducationComponentStyles>
       {props.children.map((prop) => (
         <>
           <ColoredPath message={prop.path} />
-          <ColoredCompany message={COMPANY_PREFIX + prop.company} />
-          {prop.experience.map((experience) => createExperience(experience))}
+          {prop.experience.map((experience) => createEducation(experience))}
         </>
       ))}
-    </ExperienceComponentStyles>
+    </EducationComponentStyles>
   );
 }
