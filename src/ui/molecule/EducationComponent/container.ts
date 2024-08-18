@@ -4,26 +4,24 @@ import { globalColor } from '../../../styles/GlobalStyles';
 export const TITLE_PREFIX: string = './';
 export const DATE_PREFIX: string = '-> ';
 export const COMPANY_PREFIX: string = '-> ';
-export const WORK_TYPE_PREFIX: string = '-> ';
 export const DESCRIPTION_PREFIX: string = '$ ';
 
 export const SPAN_STYLE: CSSProperties = {
   color: `${globalColor.quaternary}`,
 };
 
-export interface ExperienceComponentProps {
+export interface EducationComponentProps {
   title: string;
   date: string;
-  workType: string;
+  company: string;
   description: string[];
 }
 
-export interface ExperienceElementProps {
+export interface EducationElementProps {
   path: string;
-  company: string;
-  experience: ExperienceComponentProps[];
+  experience: EducationComponentProps[];
 }
 
-export interface ExperienceProps {
-  children: ExperienceElementProps[];
+export interface EducationProps {
+  children: EducationElementProps[];
 }
