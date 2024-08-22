@@ -1,43 +1,81 @@
 {
-  "profession": "software engineer",
-  "study": "software engineer",
+  "profession": "software developer",
+  "study": "software engineering postgraduate",
   "welcome": "Hi There! I'm Vitor",
   "professional_experience": "professional experience",
   "academic_education": "academic education",
   "professional_experience_info": [
     {
-      "path": "~/experience/dev",
+      "path": "~/experience/dev/ci_and_t",
+      "company": "CI&T, São Paulo, BR",
       "experience": [
         {
-          "title": "software_developer",
-          "date": "2022 - present",
-          "company": "Boavista Tecnologia, Fortaleza, BRL",
+          "title": "mid_level_software_developer",
+          "date": "aug/2024 - present",
+          "work_type": "Remote",
+          "description": []
+        }
+      ]
+    },
+    {
+      "path": "~/experience/dev/boavista",
+      "company": "Boavista Tecnologia, Fortaleza, BR",
+      "experience": [
+        {
+          "title": "junior_software_developer",
+          "date": "oct/2023 - aug/2024",
+          "work_type": "Remote",
           "description": [
-            "Proficient in creating and maintaining applications using the Spring Boot framework. I have knowledge in JPA, JUnit Jupiter for testing, native queries, test-driven development, solid design principles, and PostgreSQL database management.",
-            "Actively involved in modernizing systems, including the creation of a new deployment system with Java 17 and the successful migration of a legacy Java 8 API to Java 17, significantly improving system efficiency and maintainability.",
-            "Developed dynamic and responsive user interfaces using technologies ranging from React to Angular."
+            "Code review during the pull/merge request process, ensuring code quality and business understanding.",
+            "Developed architecture strategies for complex functionalities and data models, ensuring system scalability and maintainability.",
+            "Contributed to the development of a file processor and maintained event-driven file cataloging processors using Spring Batch and Kafka.",
+            "Proficient in creating and maintaining applications using the Spring Boot framework. Utilizing JPA, JUnit Jupiter for testing, native queries, test-driven development, SOLID design principles, and PostgreSQL database management."
+          ]
+        },
+        {
+          "title": "trainee_software_developer",
+          "date": "dec/2022 - oct/2023",
+          "work_type": "Remote",
+          "description": [
+            "Proficient in creating and maintaining applications using the Spring Boot framework. I have knowledge in JPA, JUnit Jupiter for testing, native queries, test-driven development, SOLID design principles, and PostgreSQL database management.",
+            "Actively participated in system modernization, including creating a new deployment system with Java 17 and successfully migrating a legacy API from Java 8 to Java 17, significantly improving system efficiency and maintainability.",
+            "Developed dynamic and responsive user interfaces, using technologies ranging from React to Angular."
           ]
         }
       ]
     },
     {
-      "path": "~/experience/infra",
+      "path": "~/experience/infra/euroamerican",
+      "company": "Euroamerican, Jandira, BR",
       "experience": [
         {
-          "title": "infrastructure_analyst",
-          "date": "2022 - 2022",
-          "company": "Euroamerican, Jandira, BRL",
+          "title": "mid_level_infrastructure_analyst",
+          "date": "oct/2022 - dec/2022",
+          "work_type": "On-site",
           "description": [
-            "Maintenance of Windows servers, administration of Exchange, DHCP, DNS, backups, AD, firewalls, and proxies.",
-            "Resolved day-to-day issues involving networks, user support, and file and application storage.",
-            "Performed hardware and software installation/configuration, system migrations, and software tool updates."
+            "Windows server maintenance, administration of Exchange, DHCP, DNS, backups, AD, firewalls, and proxies.",
+            "I performed hardware and software installation/configuration, system migrations, and software tool updates."
+          ]
+        },
+        {
+          "title": "junior_infrastructure_analyst",
+          "date": "apr/2022 - oct/2022",
+          "work_type": "On-site",
+          "description": [
+            "Windows server maintenance, administration of Exchange, DHCP, DNS, backups, AD, firewalls, and proxies.",
+            "I resolved day-to-day issues involving networks, user support, and file and application storage."
           ]
         },
         {
           "title": "it_intern",
-          "date": "2021 - 2022",
-          "company": "Euroamerican, Jandira, BRL",
-          "description": []
+          "date": "oct/2021 - apr/2022",
+          "work_type": "On-site",
+          "description": [
+            "User support.",
+            "Machine updates and maintenance.",
+            "Department account management.",
+            "Ticket management (GLPI)."
+          ]
         }
       ]
     }
@@ -49,13 +87,13 @@
         {
           "title": "software_engineer",
           "date": "2023 - 2024",
-          "company": "Uniamerica, BRL",
+          "company": "Uniamerica, BR",
           "description": []
         },
         {
           "title": "system_analysis_and_development",
           "date": "2021 - 2023",
-          "company": "Universidade Nove de Julho, São Paulo, BRL",
+          "company": "Universidade Nove de Julho, São Paulo, BR",
           "description": []
         }
       ]
@@ -66,13 +104,13 @@
         {
           "title": "it_maintenance_and_support",
           "date": "2018 - 2020",
-          "company": "Instituto Tecnico de Barueri, Barueri, BRL",
+          "company": "Instituto Tecnico de Barueri, Barueri, BR",
           "description": []
         }
       ]
     }
   ],
-  "resume": "I'm a technology enthusiast who began exploring the world of programming at around 15 years old. Currently, I'm postgraduate in software engineering and work as a developer at one of the leading credit reconciliation companies in Brazil. My journey includes a degree in Systems Analysis, and I have prior experience in infrastructure. In my day-to-day work, I build robust applications using technologies such as Java with Spring Boot, React, Angular, JavaScript, and TypeScript. I always prioritize Test-Driven Development (TDD) and the SOLID principles to maintain code quality. In my spare time, my curiosity drives me to explore innovative technologies and develop applications using functional programming principles in Golang, such as APIs and processors. I use databases like MongoDB and PostgreSQL, as well as RabbitMQ for queue management. My passion for solving problems through code motivates me to be in constant learning.",
+  "resume": "I am a technology enthusiast who started exploring the world of programming at around 15 years old. Currently, I hold a postgraduate degree in Software Engineering and work as a developer at a technology and software development company. My journey includes a degree in Systems Analysis and Development, and I have previous experience in infrastructure. In my daily work, I build robust applications using technologies like Java with Spring Boot. I always prioritize Test-Driven Development (TDD) and SOLID principles to maintain code quality. In my spare time, I am driven by curiosity and enjoy exploring new technologies and developing applications using functional programming principles in Golang, such as APIs and processors. I work with databases like MongoDB and PostgreSQL, as well as RabbitMQ for queue management. My passion for solving problems with code motivates me to be in constant learning mode.",
   "project-title": "projects",
   "project-info": [
     {
@@ -111,24 +149,6 @@
       "tag": [
         "React",
         "TypeScript"
-      ]
-    },
-    {
-      "title": "school-web",
-      "description": "This repository is my first project using React with backend integration.",
-      "uri_github": "/school-web",
-      "tag": [
-        "React",
-        "JavaScript"
-      ]
-    },
-    {
-      "title": "school-api",
-      "description": "This repository is a backend for the school-web project. Initially, it was developed in JavaScript, but later it was rewritten in Java.",
-      "uri_github": "/school-api",
-      "tag": [
-        "SpringBoot",
-        "MariaDB"
       ]
     }
   ]
