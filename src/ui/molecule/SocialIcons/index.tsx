@@ -1,16 +1,11 @@
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin
-} from '@fortawesome/free-brands-svg-icons';
-import { faMailReply } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 import {
   EMAIL_LINK,
   GITHUB_LINK,
-  INSTAGRAM_LINK,
-  LINKEDIN_LINK
+  LINKEDIN_LINK,
 } from '../../../util/constants.ts';
 import IconAwesome from '../../atom/IconAwesome';
 import { SocialIconsStyled } from './styles.ts';
@@ -34,12 +29,7 @@ export default function SocialIcons(): ReactElement {
       url: `${LINKEDIN_LINK}}`,
     },
     {
-      icon: faInstagram,
-      key: 'instagram',
-      url: `${INSTAGRAM_LINK}`,
-    },
-    {
-      icon: faMailReply,
+      icon: faEnvelope,
       key: 'email',
       url: `${EMAIL_LINK}`,
     },
