@@ -150,16 +150,6 @@
         "React",
         "TypeScript"
       ]
-    },
-    {
-      "title": "lead-stream-service",
-      "description": "Projeto de um serviço de stream de leads.",
-      "uri_github": "/lead-stream-service",
-      "tag": [
-        "Golang",
-        "Huma",
-        "MongoDB"
-      ]
     }
   ]
 }

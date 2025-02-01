@@ -150,16 +150,6 @@
         "React",
         "TypeScript"
       ]
-    },
-    {
-      "title": "lead-stream-service",
-      "description": "Lead processor service",
-      "uri_github": "/lead-stream-service",
-      "tag": [
-        "Golang",
-        "Huma",
-        "MongoDB"
-      ]
     }
   ]
 }
