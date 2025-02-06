@@ -153,7 +153,7 @@
     },
     {
       "title": "lead-stream-service",
-      "description": "Projeto de um serviço de stream de leads.",
+      "description": "O Lead Stream Service é um serviço web para gerenciar schemas e carregar arquivos associados a esses schemas.",
       "uri_github": "/lead-stream-service",
       "tag": [
         "Golang",
