@@ -153,7 +153,7 @@
     },
     {
       "title": "lead-stream-service",
-      "description": "Lead processor service",
+      "description": "Lead Stream Service is a web service for managing schemas and uploading files associated with those schemas.",
       "uri_github": "/lead-stream-service",
       "tag": [
         "Golang",
