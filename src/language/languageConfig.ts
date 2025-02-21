@@ -11,7 +11,7 @@ i18next
       en: { translation: translationEN },
       pt: { translation: translationBR },
     },
-    lng: 'pt', // Idioma padrão
-    fallbackLng: 'en',
+    lng: 'en', // Idioma padrão
+    fallbackLng: 'pt',
   })
   .then();
