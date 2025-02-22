@@ -5,6 +5,7 @@ import Home from '../../ui/organism/Sections/Home';
 import About from '../../ui/organism/Sections/About/index.tsx';
 import ExperienceAndEducation from '../../ui/organism/Sections/ExperienceAndEducation/index.tsx';
 import Project from '../../ui/organism/Sections/Project/index.tsx';
+import Blog from '../../ui/organism/Sections/Blog/index.tsx';
 
 export default function MainPage(): ReactElement {
   return (
@@ -13,6 +14,7 @@ export default function MainPage(): ReactElement {
       <About id={'about'} />
       <ExperienceAndEducation id={'experience'} />
       <Project id={'project'} />
+      <Blog id={'blog'} />
     </MainPageStyles>
   );
 }

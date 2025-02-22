@@ -161,5 +161,18 @@
         "MongoDB"
       ]
     }
+  ],
+  "blog-title": "blog",
+  "blog-info": [
+    {
+      "title": "por que evitar o uso do curinga * nos imports?",
+        "description": "Embora o uso do curinga * nos imports em Java possa parecer conveniente, essa prática pode comprometer a clareza e a manutenção do código. Importar explicitamente apenas as classes necessárias é considerado uma boa prática, pois facilita a leitura e evita conflitos de nomes",
+      "uri_github": "/springboot-clean-architecture-example",
+      "tag": [
+        "Java",
+        "Clean Code",
+        "Best Practices"  
+      ]
+    }
   ]
 }
