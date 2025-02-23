@@ -16,6 +16,7 @@ export default function About(props: SectionProps): ReactElement {
           <TitleAbout>{t('welcome')}</TitleAbout>
           <p>{t('resume')}</p>
           <p>{t('resume-2')}</p>
+          <p>{t('resume-3')}</p>
         </TextAbout>
       </AboutStyles>
   );

@@ -1,7 +1,7 @@
 {
   "profession": "software engineer",
   "study": "software engineer",
-  "welcome": "Hi There! I'm Vitor",
+  "welcome": "Hi, I'm Vitor!",
   "professional_experience": "Working Experience",
   "academic_education": "Education",
   "professional_experience_info": [
@@ -101,8 +101,9 @@
       ]
     }
   ],
-  "resume": "Software Engineer with solid experience in backend development with Java and Go, specializing in scalable and modern architectures. I have worked on system modernization, CI/CD pipeline creation, event-driven processing with Kafka, and microservices-based architectures.",
-  "resume-2": "I am committed to delivering efficient solutions, with a focus on quality, maintainability, and strategic alignment with business needs.",
+  "resume": "Software Engineer with solid experience in backend development with Java and Go, specializing in scalable and modern architectures. ",
+  "resume-2": "I have worked on system modernization, CI/CD pipeline creation, event-driven processing with Kafka, and microservices-based architectures.",
+  "resume-3": "I am committed to delivering efficient solutions, with a focus on quality, maintainability, and strategic alignment with business needs.",
   "project-title": "Projects",
   "project-info": [
     {
