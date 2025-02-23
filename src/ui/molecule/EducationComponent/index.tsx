@@ -1,20 +1,18 @@
 import {
-  ColoredCompany,
-  ColoredDate,
-  ColoredDescription,
-  ColoredPath,
   ColoredTitle,
-  EducationComponentStyles,
+  ColoredDate,
+  ColoredCompany,
   EducationStyles,
+  ColoredDescription,
+  EducationComponentStyles,
 } from './styles';
 import {
-  COMPANY_PREFIX,
-  DATE_PREFIX,
-  DESCRIPTION_PREFIX,
-  EducationComponentProps,
-  EducationProps,
   SPAN_STYLE,
-  TITLE_PREFIX,
+  DATE_PREFIX,
+  COMPANY_PREFIX,
+  DESCRIPTION_PREFIX,
+  EducationProps,
+  EducationComponentProps,
 } from './container';
 
 export default function EducationComponent(props: EducationProps) {
@@ -33,25 +31,24 @@ export default function EducationComponent(props: EducationProps) {
 
   const createEducation = (experience: EducationComponentProps) => {
     return (
-      <EducationStyles>
-        <br />
-        <ColoredTitle message={TITLE_PREFIX + experience.title} />
-        <ColoredDate message={DATE_PREFIX + experience.date} />
-        <ColoredCompany message={COMPANY_PREFIX + experience.company} />
-        {experience.description.map((description) =>
-          createDescription(description),
-        )}
-      </EducationStyles>
+      <>
+        <ColoredTitle message={experience.title} />
+        <EducationStyles>
+          <br />
+          <ColoredDate message={DATE_PREFIX + experience.date} />
+          <ColoredCompany message={COMPANY_PREFIX + experience.company} />
+          {experience.description.map((description) =>
+            createDescription(description)
+          )}
+        </EducationStyles>
+      </>
     );
   };
 
   return (
     <EducationComponentStyles>
       {props.children.map((prop) => (
-        <>
-          <ColoredPath message={prop.path} />
-          {prop.experience.map((experience) => createEducation(experience))}
-        </>
+        <>{prop.experience.map((experience) => createEducation(experience))}</>
       ))}
     </EducationComponentStyles>
   );

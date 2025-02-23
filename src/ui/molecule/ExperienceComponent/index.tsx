@@ -1,17 +1,17 @@
 import {
   ColoredDate,
-  ColoredDescription,
   ColoredCompany,
   ColoredWorkTitle,
-  ExperienceComponentStyles,
   ExperienceStyles,
+  ColoredDescription,
+  ExperienceComponentStyles,
 } from './styles';
 import {
+  SPAN_STYLE,
   DATE_PREFIX,
   DESCRIPTION_PREFIX,
-  ExperienceComponentProps,
   ExperienceProps,
-  SPAN_STYLE,
+  ExperienceComponentProps,
 } from './container';
 
 export default function ExperienceComponent(props: ExperienceProps) {

@@ -6,37 +6,20 @@ export const EducationComponentStyles = styled.div`
   padding: 0 15px 0 15px;
 `;
 
-export const ColoredPath = styled(ColoredText)`
+export const ColoredTitle = styled(ColoredText)`
   color: ${globalColor.primary};
   margin-top: 30px;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   display: flex;
   word-break: break-word;
+  margin-left: 5%;
 
   @media (max-width: 510px) {
     font-size: 19px;
   }
   @media (max-width: 400px) {
     font-size: 17px;
-  }
-`;
-
-export const ColoredTitle = styled(ColoredText)`
-  margin-left: -8%;
-  font-size: 20px;
-  color: ${globalColor.quaternary};
-  margin-bottom: 20px;
-  display: flex;
-  word-break: break-word;
-
-  @media (max-width: 510px) {
-    font-size: 18px;
-    margin-left: -4%;
-  }
-  @media (max-width: 400px) {
-    font-size: 16px;
-    margin-left: -4%;
   }
 `;
 
@@ -57,13 +40,9 @@ export const ColoredDescription = styled(ColoredText)`
   word-break: break-word;
 `;
 
-export const ColoredSpan = styled(ColoredText)`
-  color: ${globalColor.quaternary};
-`;
-
 export const EducationStyles = styled.div`
   color: ${globalColor.secondary};
-  margin-left: 21%;
+  margin-left: 10%;
   font-size: 18px;
   font-weight: 500;
 

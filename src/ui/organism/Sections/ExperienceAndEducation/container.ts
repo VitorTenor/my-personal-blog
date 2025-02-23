@@ -1,8 +1,8 @@
 import { t } from 'i18next';
 
 enum Type {
-  PROFESSIONAL = 'professional_experience_info',
   ACADEMIC = 'academic_education_info',
+  PROFESSIONAL = 'professional_experience_info',
 }
 
 export default function useContainer() {
