@@ -11,7 +11,7 @@ export const ColoredCompany = styled(ColoredText)`
   margin-top: 30px;
   margin-left: 5%;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   display: flex;
   word-break: break-word;
 

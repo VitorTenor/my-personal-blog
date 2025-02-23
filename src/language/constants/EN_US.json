@@ -113,7 +113,8 @@
         "SpringBoot",
         "Java 21",
         "PostgreSQL"
-      ]
+      ],
+      "isContact": false
     },
     {
       "title": "Notificator",
@@ -122,7 +123,8 @@
       "tag": [
         "SpringBoot",
         "RabbitMQ"
-      ]
+      ],
+      "isContact": false
     },
     {
       "title": "Music Streamer Api",
@@ -132,7 +134,8 @@
         "SpringBoot",
         "JPA",
         "PostgreSQL"
-      ]
+      ],
+      "isContact": false
     },
     {
       "title": "My Personal Blog",
@@ -141,7 +144,8 @@
       "tag": [
         "React",
         "TypeScript"
-      ]
+      ],
+      "isContact": false
     },
     {
       "title": "Lead Stream Service",
@@ -151,7 +155,17 @@
         "Golang",
         "Huma",
         "MongoDB"
-      ]
+      ],
+      "isContact": false
+    },
+    {
+      "title": "Your Project Here",
+      "description": "Do you have a project in mind? Let's make it happen! Contact me and let's discuss how we can bring your idea to life.",
+      "uri_github": "",
+      "tag": [
+        "Contact Me"
+      ],
+      "isContact": true
     }
   ]
 }
