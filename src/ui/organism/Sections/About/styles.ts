@@ -8,7 +8,7 @@ export const AboutStyles = styled.section`
   flex-direction: row;
   align-items: center;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1280px) {
     flex-direction: column;
     width: 88%;
   }
@@ -40,6 +40,8 @@ export const ProfileImage = styled.img`
 export const TextAbout = styled.div`
   font-size: 25px;
   color: ${globalColor.secondary};
+  margin-left: 35px;
+    
 
   p {
     text-align: justify;
@@ -47,7 +49,6 @@ export const TextAbout = styled.div`
   @media (max-width: 1700px) {
     font-size: 22px;
   }
-
   @media (max-width: 550px) {
     margin-top: -30px;
     font-size: 15px;

@@ -7,6 +7,9 @@ import {
   TagsStyles,
   TagComponent,
   TitleComponentStyles,
+  ColoredTitleStylesContact,
+  TagsStylesContact,
+  TitleComponentStylesContact
 } from './styles';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -47,7 +50,44 @@ export default function ProjectComponent(
     );
   };
 
+  const createTitleContact = (project: ProjectInfo) => {
+    return (
+      <TitleComponentStylesContact>
+        <ColoredTitleStylesContact message={project.title} />
+        <FontAwesomeIcon icon={faLink} className="icon-link" />
+      </TitleComponentStylesContact>
+    );
+  };
+
+  const createTagContact = (project: ProjectInfo) => {
+    return (
+      <TagComponent>
+        {project.tag.map((tag: string) => createTagElementContact(tag))}
+      </TagComponent>
+    );
+  };
+
+  const createTagElementContact = (tag: string) => {
+    return (
+      <TagsStylesContact>
+        {TAG_PREFIX}
+        {tag}
+        {TAG_POSFIX}
+      </TagsStylesContact>
+    );
+  };
+
   const createProject = (project: ProjectInfo) => {
+    if (project.isContact) {
+      return (
+        <ProjectStyles onClick={() => window.open(`${project.github}`, '_blank')}>
+          {createTitleContact(project)}
+          <DescriptionStyles>{project.description}</DescriptionStyles>
+          {createTagContact(project)}
+        </ProjectStyles>
+      );
+    }
+
     return (
       <ProjectStyles onClick={() => window.open(`${project.github}`, '_blank')}>
         {createTitle(project)}

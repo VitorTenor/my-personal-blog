@@ -21,11 +21,14 @@ export default function useContainer() {
         tag.push(t(`project-info.${i}.tag.${j}`));
       }
 
+      const isContact = t(`project-info.${i}.isContact`);
+
       const project: ProjectInfo = {
         title,
         description,
         tag,
         github,
+        isContact
       };
 
       project_component.push(project);

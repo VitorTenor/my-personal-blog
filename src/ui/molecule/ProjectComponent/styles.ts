@@ -116,3 +116,53 @@ export const TitleComponentStyles = styled.div`
     margin-top: 15px;
   }
 `;
+
+export const ColoredTitleStylesContact = styled(ColoredText)`
+  font-size: 22px;
+  font-weight: 600;
+  color: ${globalColor.quaternary};
+  margin: 10px 0 0 20px;
+
+  @media (max-width: 510px) {
+    font-size: 20px;
+  }
+  @media (max-width: 410px) {
+    font-size: 18px;
+  }
+`;
+
+export const TagsStylesContact = styled.div`
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px;
+  color: ${globalColor.secondary};
+  background-color: ${globalColor.quinary};
+  border-radius: 20px;
+  padding: 3px 10px 3px 10px;
+  border: none;
+
+  span {
+    color: ${globalColor.quaternary};
+  }
+
+  @media (max-width: 510px) {
+    font-size: 14px;
+  }
+  @media (max-width: 410px) {
+    font-size: 12px;
+  }
+`;
+
+export const TitleComponentStylesContact = styled.div`
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .icon-link {
+    color: ${globalColor.quaternary};
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+`;
+
+

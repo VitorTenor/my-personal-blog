@@ -5,6 +5,7 @@ export interface ProjectInfo {
   description: string;
   tag: string[];
   github: string;
+  isContact: string;
 }
 
 export interface ProjectComponentProps {
@@ -17,4 +18,3 @@ export const TAG_PREFIX: ReactElement = (
 export const TAG_POSFIX: ReactElement = (
   <span className="postfix-tag">{'/>'}</span>
 );
-export const TITLE_PREFIX: string = './';
