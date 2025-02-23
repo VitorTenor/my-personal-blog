@@ -1,75 +1,72 @@
 {
-  "profession": "desenvolvedor de software",
-  "study": "desenvolvedor de software",
+  "profession": "engenheiro de software",
+  "study": "engenheiro de software",
   "welcome": "Eaaai! Eu sou o Vitor",
-  "professional_experience": "experiência profissional",
-  "academic_education": "formação acadêmica",
+  "professional_experience": "Experiência Profissional",
+  "academic_education": "Formação Acadêmica",
   "professional_experience_info": [
     {
-      "path": "~/experiencia/dev/ci_and_t",
-      "company": "CI&T, São Paulo, BR",
+      "company": "CI&T, São Paulo - BR",
       "experience": [
         {
-          "title": "desenvolvedor_de_software_pleno",
+          "title": "Engenheiro de Software Pleno",
           "date": "ago/2022 - presente",
-          "work_type": "Remoto",
-          "description": []
+          "description": [
+            "Desenvolvimento backend com Java e Spring Boot.",
+            "Scripts de carga/atualização de dados usando Python e JavaScript.",
+            "Pipelines de CI/CD com Azure DevOps, ArgoCD e New Relic.",
+            "CosmosDB para armazenamento e gerenciamento de dados."
+          ]
         }
       ]
     },
     {
-      "path": "~/experiencia/dev/boavista",
-      "company": "Boavista Tecnologia, Fortaleza, BR",
+      "company": "Boavista Tecnologia, Fortaleza - BR",
       "experience": [
         {
-          "title": "desenvolvedor_de_software_junior",
+          "title": "Engenheiro de Software Junior",
           "date": "out/2023 - ago/2024",
-          "work_type": "Remoto",
           "description": [
-            "Code Review durante o fluxo das solicitações de pull/merge request, garantindo a qualidade do código e o entendimento do negócio.",
-            "Desenvolvi estratégias de arquitetura para funcionalidades e modelos de dados complexos, assegurando a escalabilidade e a manutenibilidade do sistema.",
-            "Contribuí para o desenvolvimento de um processador de arquivos e realizei a manutenção de processadores de catalogação de arquivos orientados a eventos, utilizando Spring Batch e Kafka.",
-            "Proficiente na criação e manutenção de aplicativos usando o framework Spring Boot. Utilizando JPA, JUnit Jupiter para testes, consultas nativas, desenvolvimento orientado a testes, princípios de design sólido e gerenciamento de banco de dados PostgreSQL."
+            "Revisão de código para garantir a qualidade e o alinhamento com as regras de negócio.",
+            "Manutenção de processadores de arquivos orientados a eventos usando Spring Batch e Kafka.",
+            "Contribuição no desenvolvimento de um processador de arquivos e manutenção de processadores de catalogação de arquivos orientados a eventos com Spring Batch e Kafka.",
+            "Criação de estratégias arquiteturais para funcionalidades complexas, garantindo escalabilidade e manutenibilidade.",
+            "Experiência com Spring Boot, JPA, JUnit Jupiter, queries nativas, TDD e PostgreSQL."
           ]
         },
         {
-          "title": "desenvolvedor_de_software_trainee",
+          "title": "Engenheiro de Software Trainee",
           "date": "dez/2022 - out/2023",
-          "work_type": "Remoto",
           "description": [
-            "Proficiente na criação e manutenção de aplicativos usando o framework Spring Boot. Possuo conhecimento em JPA, JUnit Jupiter para testes, consultas nativas, desenvolvimento orientado a testes, princípios de design sólido e gerenciamento de banco de dados PostgreSQL.",
-            "Participei ativamente da modernização de sistemas, incluindo a criação de um novo sistema de implantação com Java 17 e a migração bem-sucedida de uma API legada de Java 8 para Java 17, melhorando significativamente a eficiência e a manutenibilidade do sistema.",
-            "Desenvolvi interfaces de usuário dinâmicas e responsivas, utilizando desde React até Angular."
+            "Modernização de sistemas, incluindo a migração de uma API de Java 8 para Java 17.",
+            "Criação de um novo sistema de implantação com Java 17, melhorando a eficiência e a manutenibilidade.",
+            "Desenvolvimento de interfaces dinâmicas e responsivas usando React e Angular."
           ]
         }
       ]
     },
     {
-      "path": "~/experiencia/infra/euroamerican",
-      "company": "Euroamerican, Jandira, BR",
+      "company": "Euroamerican, Jandira - BR",
       "experience": [
         {
-          "title": "analista_de_infraestrutura_pleno",
+          "title": "Analista de Infraestrutura Pleno",
           "date": "out/2022 - dez/2022",
-          "work_type": "Presencial",
           "description": [
             "Manutenção de servidores Windows, administração de Exchange, DHCP, DNS, backups, AD, firewalls e proxies.",
             "Realizei instalação/configuração de hardware e software, migrações de sistemas e atualizações de ferramentas de software."
           ]
         },
         {
-          "title": "analista_de_infraestrutura_junior",
+          "title": "Analista de Infraestrutura Junior",
           "date": "abr/2022 - out/2022",
-          "work_type": "Presencial",
           "description": [
             "Manutenção de servidores Windows, administração de Exchange, DHCP, DNS, backups, AD, firewalls e proxies.",
-            "Solucionei problemas do dia a dia envolvendo redes, suporte a usuários e armazenamento de arquivos e aplicativos."
+            "Problemas do dia a dia envolvendo redes, suporte a usuários e armazenamento de arquivos e aplicativos."
           ]
         },
         {
-          "title": "estagiario_de_infraestrutura",
+          "title": "Estagiario de Infraestrutura",
           "date": "out/2021 - abr/2022",
-          "work_type": "Presencial",
           "description": [
             "Suporte a usuários.",
             "Atualização e manutenção de máquinas.",
@@ -110,12 +107,13 @@
       ]
     }
   ],
-  "resume": "Entusiasta da tecnologia comecei a explorar o mundo da programação com aproximadamente 12 anos. Atualmente, sou pós-graduado em Engenharia de Software e trabalho como desenvolvedor. Minha trajetória inclui uma graduação em Análise e Desenvolvimento de Sistemas e experiência prévia em infraestrutura. No meu dia a dia, construo aplicações sólidas utilizando tecnologias como Java com Spring Boot. Sempre priorizo o Test-Driven Development (TDD) e os princípios SOLID para manter a qualidade do código. Nas horas vagas, sou movido pela curiosidade e gosto de explorar novas tecnologias e desenvolver aplicações utilizando princípios de programação funcional em Golang, como APIs e processadores. Utilizo bancos de dados como MongoDB e PostgreSQL, além de RabbitMQ para gerenciamento de filas. Minha paixão por resolver problemas com código me motiva a estar em constante aprendizado.",
+  "resume": "Engenheiro de Software com sólida experiência em desenvolvimento backend com Java e Go, especializado em arquiteturas escaláveis e modernas. Atuei na modernização de sistemas, criação de pipelines de CI/CD, processamento orientado a eventos com Kafka e arquiteturas baseadas em microsserviços.",
+  "resume-2": "Comprometido em entregar soluções eficientes, com foco em qualidade, manutenibilidade e alinhamento estratégico com as necessidades do negócio.",
   "project-title": "projetos",
   "project-info": [
     {
       "title": "clean-architecture-example",
-        "description": "Esse é um repositorio exemplo do uso de arquitetura limpa.",
+      "description": "Esse é um repositorio exemplo do uso de arquitetura limpa.",
       "uri_github": "/springboot-clean-architecture-example",
       "tag": [
         "SpringBoot",

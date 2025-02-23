@@ -28,7 +28,6 @@ export const BodyStyles = styled.div`
   border-radius: 30px;
   background-color: ${globalColor.tertiary};
   height: 100%;
-  height: 100%;
   width: 90%;
 
   @media (max-width: 1040px) {

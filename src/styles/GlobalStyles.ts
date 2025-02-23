@@ -1,6 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-// @ts-ignore
-import BG_IMAGE from '../assets/backgroundImage.jpg';
 
 export enum globalColor {
   primary = '#18d26e',
@@ -21,8 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     
     font-family: 'Fira Code', monospace;
 
-    background-image: url(${BG_IMAGE});
-
+    background-color: ${globalColor.tertiary};
 
     /* Personalização do scroll */
     scrollbar-width: thin;

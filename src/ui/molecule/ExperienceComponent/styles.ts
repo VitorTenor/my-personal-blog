@@ -6,9 +6,10 @@ export const ExperienceComponentStyles = styled.div`
   padding: 0 15px 0 15px;
 `;
 
-export const ColoredPath = styled(ColoredText)`
+export const ColoredCompany = styled(ColoredText)`
   color: ${globalColor.primary};
   margin-top: 30px;
+  margin-left: 5%;
   font-size: 20px;
   font-weight: 400;
   display: flex;
@@ -22,11 +23,11 @@ export const ColoredPath = styled(ColoredText)`
   }
 `;
 
-export const ColoredTitle = styled(ColoredText)`
-  margin-left: -8%;
+export const ColoredWorkTitle = styled(ColoredText)`
   font-size: 20px;
-  color: ${globalColor.quaternary};
-  margin-bottom: 20px;
+  color: ${globalColor.secondary};
+  font-weight: 600;
+  margin-bottom: 10px;
   display: flex;
   word-break: break-word;
 
@@ -41,21 +42,8 @@ export const ColoredTitle = styled(ColoredText)`
 `;
 
 export const ColoredDate = styled(ColoredText)`
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   display: flex;
-`;
-
-export const ColoredCompany = styled(ColoredText)`
-  margin: 25px 0 0 15px;
-  color: ${globalColor.secondary};
-  display: flex;
-  word-break: break-word;
-`;
-
-export const ColoredWorkType = styled(ColoredText)`
-  margin-bottom: 10px;
-  display: flex;
-  word-break: break-word;
 `;
 
 export const ColoredDescription = styled(ColoredText)`
@@ -64,15 +52,12 @@ export const ColoredDescription = styled(ColoredText)`
   word-break: break-word;
 `;
 
-export const ColoredSpan = styled(ColoredText)`
-  color: ${globalColor.quaternary};
-`;
-
 export const ExperienceStyles = styled.div`
   color: ${globalColor.secondary};
-  margin-left: 21%;
+  margin-left: 10%;
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 5%;
 
   @media (max-width: 1040px) {
     margin-left: 18%;

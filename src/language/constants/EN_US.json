@@ -1,75 +1,72 @@
 {
-  "profession": "software developer",
-  "study": "software developer",
+  "profession": "software engineer",
+  "study": "software engineer",
   "welcome": "Hi There! I'm Vitor",
-  "professional_experience": "professional experience",
-  "academic_education": "academic education",
+  "professional_experience": "Working Experience",
+  "academic_education": "Education",
   "professional_experience_info": [
     {
-      "path": "~/experience/dev/ci_and_t",
-      "company": "CI&T, São Paulo, BR",
+      "company": "CI&T, São Paulo - BR",
       "experience": [
         {
-          "title": "mid_level_software_developer",
-          "date": "aug/2024 - present",
-          "work_type": "Remote",
-          "description": []
+          "title": "Software Engineer",
+          "date": "Aug/2024 - Present",
+          "description": [
+            "Backend development with Java and Spring Boot.",
+            "Data load/update scripts using Python and JavaScript.",
+            "CI/CD pipelines with Azure DevOps, ArgoCD, and New Relic.",
+            "CosmosDB for data storage and management."
+          ]
         }
       ]
     },
     {
-      "path": "~/experience/dev/boavista",
-      "company": "Boavista Tecnologia, Fortaleza, BR",
+      "company": "Boavista Technology, Fortaleza - BR",
       "experience": [
         {
-          "title": "junior_software_developer",
-          "date": "oct/2023 - aug/2024",
-          "work_type": "Remote",
+          "title": "Junior Software Engineer",
+          "date": "Oct/2023 - Aug/2024",
           "description": [
-            "Code review during the pull/merge request process, ensuring code quality and business understanding.",
-            "Developed architecture strategies for complex functionalities and data models, ensuring system scalability and maintainability.",
+            "Code reviews to ensure code quality and alignment with business rules.",
+            "Maintenance of event-driven file processors using Spring Batch and Kafka.",
             "Contributed to the development of a file processor and maintained event-driven file cataloging processors using Spring Batch and Kafka.",
-            "Proficient in creating and maintaining applications using the Spring Boot framework. Utilizing JPA, JUnit Jupiter for testing, native queries, test-driven development, SOLID design principles, and PostgreSQL database management."
+            "Creation of architectural strategies for complex functionalities, ensuring scalability and maintainability.",
+            "Experience with Spring Boot, JPA, JUnit Jupiter, native queries, TDD, and PostgreSQL."
           ]
         },
         {
-          "title": "trainee_software_developer",
-          "date": "dec/2022 - oct/2023",
-          "work_type": "Remote",
+          "title": "Trainee Software Engineer",
+          "date": "Dec/2022 - Oct/2023",
           "description": [
-            "Proficient in creating and maintaining applications using the Spring Boot framework. I have knowledge in JPA, JUnit Jupiter for testing, native queries, test-driven development, SOLID design principles, and PostgreSQL database management.",
-            "Actively participated in system modernization, including creating a new deployment system with Java 17 and successfully migrating a legacy API from Java 8 to Java 17, significantly improving system efficiency and maintainability.",
-            "Developed dynamic and responsive user interfaces, using technologies ranging from React to Angular."
+            "System modernization, including migration of an API from Java 8 to Java 17.",
+            "Creation of a new deployment system with Java 17, improving efficiency and maintainability.",
+            "Development of dynamic and responsive interfaces using React and Angular."
           ]
         }
       ]
     },
     {
-      "path": "~/experience/infra/euroamerican",
-      "company": "Euroamerican, Jandira, BR",
+      "company": "Euroamerican, Jandira - BR",
       "experience": [
         {
-          "title": "mid_level_infrastructure_analyst",
-          "date": "oct/2022 - dec/2022",
-          "work_type": "On-site",
+          "title": "Infrastructure Analyst",
+          "date": "Oct/2022 - Dec/2022",
           "description": [
             "Windows server maintenance, administration of Exchange, DHCP, DNS, backups, AD, firewalls, and proxies.",
-            "I performed hardware and software installation/configuration, system migrations, and software tool updates."
+            "Hardware and software installation/configuration, system migrations, and software tool updates."
           ]
         },
         {
-          "title": "junior_infrastructure_analyst",
-          "date": "apr/2022 - oct/2022",
-          "work_type": "On-site",
+          "title": "Junior Infrastructure Analyst",
+          "date": "Apr/2022 - Oct/2022",
           "description": [
             "Windows server maintenance, administration of Exchange, DHCP, DNS, backups, AD, firewalls, and proxies.",
-            "I resolved day-to-day issues involving networks, user support, and file and application storage."
+            "Day-to-day issues involving networks, user support, and file and application storage."
           ]
         },
         {
-          "title": "it_intern",
-          "date": "oct/2021 - apr/2022",
-          "work_type": "On-site",
+          "title": "IT Intern",
+          "date": "Oct/2021 - Apr/2022",
           "description": [
             "User support.",
             "Machine updates and maintenance.",
@@ -85,13 +82,13 @@
       "path": "~/academic/graduation",
       "experience": [
         {
-          "title": "software_engineer",
+          "title": "postgraduate degree in software engineering",
           "date": "2023 - 2024",
-          "company": "Uniamerica, BR",
+          "company": "Uniamerica University, BR",
           "description": []
         },
         {
-          "title": "system_analysis_and_development",
+          "title": "graduate in system analysis and development",
           "date": "2021 - 2023",
           "company": "Universidade Nove de Julho, São Paulo, BR",
           "description": []
@@ -102,7 +99,7 @@
       "path": "~/academic/high_school",
       "experience": [
         {
-          "title": "it_maintenance_and_support",
+          "title": "it maintenance and support",
           "date": "2018 - 2020",
           "company": "Instituto Tecnico de Barueri, Barueri, BR",
           "description": []
@@ -110,8 +107,9 @@
       ]
     }
   ],
-  "resume": "Technology enthusiast, I began exploring the world of programming around the age of 12. Currently, I hold a postgraduate degree in Software Engineering and work as a developer. My journey includes a degree in Systems Analysis and Development and a previous experience in infrastructure. In my daily work, I build robust applications using technologies like Java with Spring Boot. I always prioritize Test-Driven Development (TDD) and SOLID principles to maintain code quality. In my spare time, I am driven by curiosity and enjoy exploring new technologies and developing applications using functional programming principles in Golang, such as APIs and processors. I work with databases like MongoDB and PostgreSQL, as well as RabbitMQ for queue management. My passion for solving problems with code motivates me to be in constant learning mode.",
-  "project-title": "projects",
+  "resume": "Software Engineer with solid experience in backend development with Java and Go, specializing in scalable and modern architectures. I have worked on system modernization, CI/CD pipeline creation, event-driven processing with Kafka, and microservices-based architectures.",
+  "resume-2": "I am committed to delivering efficient solutions, with a focus on quality, maintainability, and strategic alignment with business needs.",
+  "project-title": "Projects",
   "project-info": [
     {
       "title": "clean-architecture-example",
