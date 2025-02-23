@@ -39,7 +39,7 @@ export const ColoredTitleStyles = styled(ColoredText)`
   font-size: 22px;
   font-weight: 600;
   color: ${globalColor.primary};
-  margin: 10px;
+  margin: 10px 0 0 20px;
 
   @media (max-width: 510px) {
     font-size: 20px;

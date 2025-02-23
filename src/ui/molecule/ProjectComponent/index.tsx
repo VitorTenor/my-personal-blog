@@ -15,7 +15,6 @@ import {
   ProjectInfo,
   TAG_POSFIX,
   TAG_PREFIX,
-  TITLE_PREFIX,
 } from './container';
 
 export default function ProjectComponent(
@@ -24,7 +23,7 @@ export default function ProjectComponent(
   const createTitle = (project: ProjectInfo) => {
     return (
       <TitleComponentStyles>
-        <ColoredTitleStyles message={TITLE_PREFIX + project.title} />
+        <ColoredTitleStyles message={project.title} />
         <FontAwesomeIcon icon={faLink} className="icon-link" />
       </TitleComponentStyles>
     );

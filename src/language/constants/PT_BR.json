@@ -103,10 +103,10 @@
   ],
   "resume": "Engenheiro de Software com sólida experiência em desenvolvimento backend com Java e Go, especializado em arquiteturas escaláveis e modernas. Atuei na modernização de sistemas, criação de pipelines de CI/CD, processamento orientado a eventos com Kafka e arquiteturas baseadas em microsserviços.",
   "resume-2": "Comprometido em entregar soluções eficientes, com foco em qualidade, manutenibilidade e alinhamento estratégico com as necessidades do negócio.",
-  "project-title": "projetos",
+  "project-title": "Projetos",
   "project-info": [
     {
-      "title": "clean-architecture-example",
+      "title": "Clean Architecture Example",
       "description": "Esse é um repositorio exemplo do uso de arquitetura limpa.",
       "uri_github": "/springboot-clean-architecture-example",
       "tag": [
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "title": "notificator",
+      "title": "Notificator",
       "description": "Esse é um repositorio de envio de notifições via email, utilizando um serviço de mensageria como gatilho do envio.",
       "uri_github": "/notificator",
       "tag": [
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "title": "music-streamer-api",
+      "title": "Music Streamer Api",
       "description": "Esse é um repositorio de upload e download de músicas com funcionalidade de player permite aos usuários enviar, baixar e ouvir músicas.",
       "uri_github": "/music-streamer-api",
       "tag": [
@@ -135,7 +135,7 @@
       ]
     },
     {
-      "title": "my-personal-blog",
+      "title": "My Personal Blog",
       "description": "Esse repositório se refere a esse website.",
       "uri_github": "/my-personal-blog",
       "tag": [
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "title": "lead-stream-service",
+      "title": "Lead Stream Service",
       "description": "O Lead Stream Service é um serviço web para gerenciar schemas e carregar arquivos associados a esses schemas.",
       "uri_github": "/lead-stream-service",
       "tag": [

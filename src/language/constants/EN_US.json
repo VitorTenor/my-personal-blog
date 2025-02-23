@@ -106,7 +106,7 @@
   "project-title": "Projects",
   "project-info": [
     {
-      "title": "clean-architecture-example",
+      "title": "Clean Architecture Example",
       "description": "This is a example of clean architecture repository.",
       "uri_github": "/springboot-clean-architecture-example",
       "tag": [
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "title": "notificator",
+      "title": "Notificator",
       "description": "This is a repository for sending notifications via email, using a messaging service as a trigger for sending.",
       "uri_github": "/notificator",
       "tag": [
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "title": "music-streamer-api",
+      "title": "Music Streamer Api",
       "description": "This is a repository for uploading and downloading music with a built-in player, allowing users to upload, download, and listen to music.",
       "uri_github": "/music-streamer-api",
       "tag": [
@@ -135,7 +135,7 @@
       ]
     },
     {
-      "title": "my-personal-blog",
+      "title": "My Personal Blog",
       "description": "This repository corresponds to this website.",
       "uri_github": "/my-personal-blog",
       "tag": [
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "title": "lead-stream-service",
+      "title": "Lead Stream Service",
       "description": "Lead Stream Service is a web service for managing schemas and uploading files associated with those schemas.",
       "uri_github": "/lead-stream-service",
       "tag": [
