@@ -19,6 +19,9 @@ export const ProfileImage = styled.img`
   margin-top: 20px;
   height: 400px;
   width: 400px;
+  border-color: ${globalColor.secondary};
+  border-radius: 50%;
+  border-style: solid;
 
   @media (max-width: 1500px) {
     margin-right: 0px;
@@ -41,11 +44,7 @@ export const TextAbout = styled.div`
   font-size: 25px;
   color: ${globalColor.secondary};
   margin-left: 35px;
-    
-
-  p {
-    text-align: justify;
-  }
+  
   @media (max-width: 1700px) {
     font-size: 22px;
   }

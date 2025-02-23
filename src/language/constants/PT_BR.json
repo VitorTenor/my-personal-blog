@@ -1,7 +1,7 @@
 {
   "profession": "engenheiro de software",
   "study": "engenheiro de software",
-  "welcome": "Eaaai! Eu sou o Vitor",
+  "welcome": "Oi, Eu sou o Vitor!",
   "professional_experience": "Experiência Profissional",
   "academic_education": "Formação Acadêmica",
   "professional_experience_info": [
@@ -101,8 +101,9 @@
       ]
     }
   ],
-  "resume": "Engenheiro de Software com sólida experiência em desenvolvimento backend com Java e Go, especializado em arquiteturas escaláveis e modernas. Atuei na modernização de sistemas, criação de pipelines de CI/CD, processamento orientado a eventos com Kafka e arquiteturas baseadas em microsserviços.",
-  "resume-2": "Comprometido em entregar soluções eficientes, com foco em qualidade, manutenibilidade e alinhamento estratégico com as necessidades do negócio.",
+  "resume": "Engenheiro de Software com sólida experiência em desenvolvimento backend com Java e Go, especializado em arquiteturas escaláveis e modernas.",
+  "resume-2": "Atuei na modernização de sistemas, criação de pipelines de CI/CD, processamento orientado a eventos com Kafka e arquiteturas baseadas em microsserviços.",
+  "resume-3": "Comprometido em entregar soluções eficientes, com foco em qualidade, manutenibilidade e alinhamento estratégico com as necessidades do negócio.",
   "project-title": "Projetos",
   "project-info": [
     {
