@@ -79,29 +79,23 @@
   ],
   "academic_education_info": [
     {
-      "path": "~/academic/graduation",
       "experience": [
         {
-          "title": "postgraduate degree in software engineering",
+          "title": "Postgraduate, Software Engineer",
           "date": "2023 - 2024",
-          "company": "Uniamerica University, BR",
+          "company": "Uniamerica University, São Paulo - BR",
           "description": []
         },
         {
-          "title": "graduate in system analysis and development",
+          "title": "Graduated, System Analysis and Development",
           "date": "2021 - 2023",
-          "company": "Universidade Nove de Julho, São Paulo, BR",
+          "company": "Nove de Julho University, São Paulo - BR",
           "description": []
-        }
-      ]
-    },
-    {
-      "path": "~/academic/high_school",
-      "experience": [
+        },
         {
-          "title": "it maintenance and support",
+          "title": "Technical, IT Maintenance and Support",
           "date": "2018 - 2020",
-          "company": "Instituto Tecnico de Barueri, Barueri, BR",
+          "company": "Instituto Tecnico de Barueri, Barueri - BR",
           "description": []
         }
       ]

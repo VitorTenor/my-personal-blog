@@ -10,7 +10,7 @@
       "experience": [
         {
           "title": "Engenheiro de Software Pleno",
-          "date": "ago/2022 - presente",
+          "date": "Ago/2022 - Presente",
           "description": [
             "Desenvolvimento backend com Java e Spring Boot.",
             "Scripts de carga/atualização de dados usando Python e JavaScript.",
@@ -25,7 +25,7 @@
       "experience": [
         {
           "title": "Engenheiro de Software Junior",
-          "date": "out/2023 - ago/2024",
+          "date": "Out/2023 - Ago/2024",
           "description": [
             "Revisão de código para garantir a qualidade e o alinhamento com as regras de negócio.",
             "Manutenção de processadores de arquivos orientados a eventos usando Spring Batch e Kafka.",
@@ -36,7 +36,7 @@
         },
         {
           "title": "Engenheiro de Software Trainee",
-          "date": "dez/2022 - out/2023",
+          "date": "Dez/2022 - Out/2023",
           "description": [
             "Modernização de sistemas, incluindo a migração de uma API de Java 8 para Java 17.",
             "Criação de um novo sistema de implantação com Java 17, melhorando a eficiência e a manutenibilidade.",
@@ -50,7 +50,7 @@
       "experience": [
         {
           "title": "Analista de Infraestrutura Pleno",
-          "date": "out/2022 - dez/2022",
+          "date": "Out/2022 - Dez/2022",
           "description": [
             "Manutenção de servidores Windows, administração de Exchange, DHCP, DNS, backups, AD, firewalls e proxies.",
             "Realizei instalação/configuração de hardware e software, migrações de sistemas e atualizações de ferramentas de software."
@@ -58,7 +58,7 @@
         },
         {
           "title": "Analista de Infraestrutura Junior",
-          "date": "abr/2022 - out/2022",
+          "date": "Abr/2022 - Out/2022",
           "description": [
             "Manutenção de servidores Windows, administração de Exchange, DHCP, DNS, backups, AD, firewalls e proxies.",
             "Problemas do dia a dia envolvendo redes, suporte a usuários e armazenamento de arquivos e aplicativos."
@@ -66,7 +66,7 @@
         },
         {
           "title": "Estagiario de Infraestrutura",
-          "date": "out/2021 - abr/2022",
+          "date": "Out/2021 - Abr/2022",
           "description": [
             "Suporte a usuários.",
             "Atualização e manutenção de máquinas.",
@@ -79,27 +79,21 @@
   ],
   "academic_education_info": [
     {
-      "path": "~/escolaridade/graduacao",
       "experience": [
         {
-          "title": "engenharia_de_software",
+          "title": "Pós-Graduação em Engenharia de Software",
           "date": "2023 - 2024",
           "company": "Uniamerica, BR",
           "description": []
         },
         {
-          "title": "analise_e_desenvolvimento_de_sistemas",
+          "title": "Graduação em Análise e Desenvolvimento de Sistemas",
           "date": "2021 - 2023",
           "company": "Universidade Nove de Julho, São Paulo, BR",
           "description": []
-        }
-      ]
-    },
-    {
-      "path": "~/escolaridade/ensino_medio",
-      "experience": [
+        },
         {
-          "title": "manutencao_e_suporte_em_informatica",
+          "title": "Técnico em Manutenção e Suporte em Informática",
           "date": "2018 - 2020",
           "company": "Instituto Tecnico de Barueri, Barueri, BR",
           "description": []

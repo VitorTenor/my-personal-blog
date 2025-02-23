@@ -2,14 +2,14 @@ import { ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SectionProps } from '../../../../util/interface';
 import {
+  TitleStyles,
   EducationStyles,
   ExperienceStyles,
   ProfessionalExperienceStyles,
-  TitleStyles,
 } from './styles';
-import ExperienceComponent from '../../../molecule/ExperienceComponent';
 import useContainer from './container';
 import EducationComponent from '../../../molecule/EducationComponent';
+import ExperienceComponent from '../../../molecule/ExperienceComponent';
 
 export default function ExperienceAndEducation(
   props: SectionProps,
