@@ -1,22 +1,17 @@
 import {
-  ColoredCompany,
   ColoredDate,
   ColoredDescription,
-  ColoredPath,
-  ColoredTitle,
-  ColoredWorkType,
+  ColoredCompany,
+  ColoredWorkTitle,
   ExperienceComponentStyles,
   ExperienceStyles,
 } from './styles';
 import {
-  COMPANY_PREFIX,
   DATE_PREFIX,
   DESCRIPTION_PREFIX,
   ExperienceComponentProps,
   ExperienceProps,
   SPAN_STYLE,
-  TITLE_PREFIX,
-  WORK_TYPE_PREFIX,
 } from './container';
 
 export default function ExperienceComponent(props: ExperienceProps) {
@@ -37,9 +32,8 @@ export default function ExperienceComponent(props: ExperienceProps) {
     return (
       <ExperienceStyles>
         <br />
-        <ColoredTitle message={TITLE_PREFIX + experience.title} />
+        <ColoredWorkTitle message={experience.title} />
         <ColoredDate message={DATE_PREFIX + experience.date} />
-        <ColoredWorkType message={WORK_TYPE_PREFIX + experience.workType} />
         {experience.description.map((description) =>
           createDescription(description),
         )}
@@ -49,11 +43,10 @@ export default function ExperienceComponent(props: ExperienceProps) {
 
   return (
     <ExperienceComponentStyles>
-      {props.children.map((prop) => (
+      {props.children.map((props) => (
         <>
-          <ColoredPath message={prop.path} />
-          <ColoredCompany message={COMPANY_PREFIX + prop.company} />
-          {prop.experience.map((experience) => createExperience(experience))}
+          <ColoredCompany message={props.company} />
+          {props.experience.map((experience) => createExperience(experience))}
         </>
       ))}
     </ExperienceComponentStyles>
