@@ -14,10 +14,16 @@ export const ExperienceStyles = styled.section`
   }
 
   @media (max-width: 510px) {
-      margin-top: -200px;
+    margin-top: -200px;
   }
   @media (max-width: 510px) {
-      margin-top: -200px;
+    margin-top: -200px;
+  }
+  @media (max-width: 400px) {
+    margin-top: -180px;
+  }
+  @media (max-width: 280px) {
+    margin-top: -100px;
   }
 `;
 
