@@ -22,6 +22,7 @@ export const ExperienceStyles = styled.section`
   //@media (max-width: 280px) {
   //  margin-top: -100px;
   //}
+
 `;
 
 export const ProfessionalExperienceStyles = styled.div`
