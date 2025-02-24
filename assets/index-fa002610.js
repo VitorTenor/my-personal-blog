@@ -1077,18 +1077,18 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     height: 100%;
   }
 
-  @media (max-width: 510px) {
-    margin-top: -200px;
-  }
-  @media (max-width: 510px) {
-    margin-top: -200px;
-  }
-  @media (max-width: 400px) {
-    margin-top: -150px;
-  }
-  @media (max-width: 280px) {
-    margin-top: -100px;
-  }
+  //@media (max-width: 510px) {
+  //  margin-top: -200px;
+  //}
+  //@media (max-width: 510px) {
+  //  margin-top: -200px;
+  //}
+  //@media (max-width: 400px) {
+  //  margin-top: -150px;
+  //}
+  //@media (max-width: 280px) {
+  //  margin-top: -100px;
+  //}
 `,YE=V.div`
   width: 48.5%;
   border-radius: 30px;
