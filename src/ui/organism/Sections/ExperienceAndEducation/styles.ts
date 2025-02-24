@@ -13,18 +13,18 @@ export const ExperienceStyles = styled.section`
     height: 100%;
   }
 
-  @media (max-width: 510px) {
-    margin-top: -200px;
-  }
-  @media (max-width: 510px) {
-    margin-top: -200px;
-  }
-  @media (max-width: 400px) {
-    margin-top: -150px;
-  }
-  @media (max-width: 280px) {
-    margin-top: -100px;
-  }
+  //@media (max-width: 510px) {
+  //  margin-top: -200px;
+  //}
+  //@media (max-width: 510px) {
+  //  margin-top: -200px;
+  //}
+  //@media (max-width: 400px) {
+  //  margin-top: -150px;
+  //}
+  //@media (max-width: 280px) {
+  //  margin-top: -100px;
+  //}
 `;
 
 export const ProfessionalExperienceStyles = styled.div`
