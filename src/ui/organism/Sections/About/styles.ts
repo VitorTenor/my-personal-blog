@@ -24,7 +24,7 @@ export const ProfileImage = styled.img`
   border-style: solid;
 
   @media (max-width: 1500px) {
-    margin-right: 0px;
+    margin-right: 0;
     zoom: 1.2;
   }
 
@@ -48,11 +48,13 @@ export const TextAbout = styled.div`
   @media (max-width: 1700px) {
     font-size: 22px;
   }
-  @media (max-width: 550px) {
-    margin-top: -30px;
+  @media (max-width: 1000px) {
+    font-size: 18px;
+  }
+  @media (max-width: 510px) {
     font-size: 15px;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 400px) {
     font-size: 13px;
   }
 `;
