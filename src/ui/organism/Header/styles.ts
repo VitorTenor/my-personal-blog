@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import IconAwesome from '../../atom/IconAwesome';
 import { globalColor } from '../../../styles/GlobalStyles.ts';
 
 export const HeaderPanel = styled.header`
@@ -14,19 +13,26 @@ export const HeaderPanel = styled.header`
   padding: 5px 15px 5px 15px;
 `;
 
-export const TranslateStyle = styled(IconAwesome)`
+export const TranslateStyle = styled.button`
   justify-self: right;
   color: ${globalColor.secondary};
+  background: transparent;
+  border: 0;
+  padding: 0;
 
   &:hover {
     color: ${globalColor.primary};
     cursor: pointer;
   }
   @media (max-width: 510px) {
-    font-size: 1.8rem;
+    svg {
+      font-size: 1.8rem;
+    }
   }
 
   @media (max-width: 400px) {
-    font-size: 1.5rem;
+    svg {
+      font-size: 1.5rem;
+    }
   }
 `;

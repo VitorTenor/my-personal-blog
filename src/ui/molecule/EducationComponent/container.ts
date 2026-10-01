@@ -17,7 +17,6 @@ export interface EducationComponentProps {
 }
 
 export interface EducationElementProps {
-  path: string;
   experience: EducationComponentProps[];
 }
 

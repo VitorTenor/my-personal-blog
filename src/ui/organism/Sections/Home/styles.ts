@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Label from '../../../atom/Label';
 import { globalColor } from '../../../../styles/GlobalStyles.ts';
 import IconAwesome from '../../../atom/IconAwesome';
 
@@ -11,7 +10,7 @@ export const HomeStyles = styled.section`
   text-align: center;
 `;
 
-export const LabelName = styled(Label)`
+export const LabelName = styled.h1`
   font-size: 65px;
   font-weight: 500;
   color: ${globalColor.primary};

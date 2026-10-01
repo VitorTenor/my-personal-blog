@@ -10,7 +10,7 @@ export const ProjectStyles = styled.section`
   text-align: center;
 `;
 
-export const TitleStyles = styled.h1`
+export const TitleStyles = styled.h2`
   font-size: 30px;
   margin-left: 3%;
   text-align: left;

@@ -9,7 +9,7 @@ import {
   TitleComponentStyles,
   ColoredTitleStylesContact,
   TagsStylesContact,
-  TitleComponentStylesContact
+  TitleComponentStylesContact,
 } from './styles';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -26,7 +26,7 @@ export default function ProjectComponent(
   const createTitle = (project: ProjectInfo) => {
     return (
       <TitleComponentStyles>
-        <ColoredTitleStyles message={project.title} />
+        <ColoredTitleStyles>{project.title}</ColoredTitleStyles>
         <FontAwesomeIcon icon={faLink} className="icon-link" />
       </TitleComponentStyles>
     );
@@ -42,7 +42,7 @@ export default function ProjectComponent(
 
   const createTagElement = (tag: string) => {
     return (
-      <TagsStyles>
+      <TagsStyles key={tag}>
         {TAG_PREFIX}
         {tag}
         {TAG_POSFIX}
@@ -53,7 +53,7 @@ export default function ProjectComponent(
   const createTitleContact = (project: ProjectInfo) => {
     return (
       <TitleComponentStylesContact>
-        <ColoredTitleStylesContact message={project.title} />
+        <ColoredTitleStylesContact>{project.title}</ColoredTitleStylesContact>
         <FontAwesomeIcon icon={faLink} className="icon-link" />
       </TitleComponentStylesContact>
     );
@@ -69,7 +69,7 @@ export default function ProjectComponent(
 
   const createTagElementContact = (tag: string) => {
     return (
-      <TagsStylesContact>
+      <TagsStylesContact key={tag}>
         {TAG_PREFIX}
         {tag}
         {TAG_POSFIX}
@@ -78,9 +78,16 @@ export default function ProjectComponent(
   };
 
   const createProject = (project: ProjectInfo) => {
+    const opensNewTab = project.url.startsWith('http');
+    const linkProps = {
+      href: project.url,
+      'aria-label': project.actionLabel,
+      ...(opensNewTab ? { target: '_blank', rel: 'noopener noreferrer' } : {}),
+    };
+
     if (project.isContact) {
       return (
-        <ProjectStyles onClick={() => window.open(`${project.github}`, '_blank')}>
+        <ProjectStyles key={project.title} {...linkProps}>
           {createTitleContact(project)}
           <DescriptionStyles>{project.description}</DescriptionStyles>
           {createTagContact(project)}
@@ -89,9 +96,12 @@ export default function ProjectComponent(
     }
 
     return (
-      <ProjectStyles onClick={() => window.open(`${project.github}`, '_blank')}>
+      <ProjectStyles key={project.title} {...linkProps}>
         {createTitle(project)}
         <DescriptionStyles>{project.description}</DescriptionStyles>
+        {project.responsibility && (
+          <DescriptionStyles>{project.responsibility}</DescriptionStyles>
+        )}
         {createTag(project)}
       </ProjectStyles>
     );

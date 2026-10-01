@@ -19,6 +19,7 @@ export default function EducationComponent(props: EducationProps) {
   const createDescription = (description: string) => {
     return (
       <ColoredDescription
+        key={description}
         message={
           <div>
             <span style={SPAN_STYLE}>{DESCRIPTION_PREFIX}</span>
@@ -31,24 +32,26 @@ export default function EducationComponent(props: EducationProps) {
 
   const createEducation = (experience: EducationComponentProps) => {
     return (
-      <>
-        <ColoredTitle message={experience.title} />
+      <article key={`${experience.title}-${experience.date}`}>
+        <ColoredTitle>{experience.title}</ColoredTitle>
         <EducationStyles>
           <br />
           <ColoredDate message={DATE_PREFIX + experience.date} />
           <ColoredCompany message={COMPANY_PREFIX + experience.company} />
           {experience.description.map((description) =>
-            createDescription(description)
+            createDescription(description),
           )}
         </EducationStyles>
-      </>
+      </article>
     );
   };
 
   return (
     <EducationComponentStyles>
       {props.children.map((prop) => (
-        <>{prop.experience.map((experience) => createEducation(experience))}</>
+        <div key={prop.experience.map((item) => item.title).join('-')}>
+          {prop.experience.map((experience) => createEducation(experience))}
+        </div>
       ))}
     </EducationComponentStyles>
   );

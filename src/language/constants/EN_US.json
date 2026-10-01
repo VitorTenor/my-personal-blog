@@ -1,172 +1,140 @@
 {
-  "profession": "software engineer",
-  "study": "software engineer",
+  "hero": { "role": "Senior Software Engineer @ CI&T" },
   "welcome": "Hi, I'm Vitor!",
+  "about": [
+    "Senior Backend Software Engineer with an infrastructure background, focused on distributed systems, solution design and production reliability.",
+    "Experience modernizing services, optimizing data processing and resolving production issues with Java, Go, Node.js and Spring Boot. Current work includes cross-service solution design and the creation of reusable agent skills with Cursor and Claude Code.",
+    "Creator of Makai, a SaaS platform for water sports schools, with responsibility for architecture, backend, infrastructure, integrations and product evolution."
+  ],
   "professional_experience": "Working Experience",
   "academic_education": "Education",
-  "professional_experience_info": [
-    {
-      "company": "CI&T, São Paulo - BR",
-      "experience": [
-        {
-          "title": "Software Engineer",
-          "date": "Aug/2024 - Present",
-          "description": [
-            "Backend development with Java and Spring Boot.",
-            "Data load/update scripts using Python and JavaScript.",
-            "CI/CD pipelines with Azure DevOps, ArgoCD, and New Relic.",
-            "CosmosDB for data storage and management."
-          ]
+  "experience": {
+    "companies": {
+      "cit": {
+        "context": "CI&T is a global technology services company. The project for AB InBev focuses on backend services and distributed systems.",
+        "roles": {
+          "senior": {
+            "title": "Senior Software Engineer",
+            "description": [
+              "Lead solution design for cross-service features, defining service responsibilities, integrations and end-to-end flows.",
+              "Drive product-level technical decisions across backend services, balancing maintainability, reliability and performance.",
+              "Create reusable agent skills and workflows with Cursor and Claude Code to support AI-assisted development."
+            ]
+          },
+          "software-engineer": {
+            "title": "Software Engineer",
+            "description": [
+              "Moved business logic into MongoDB aggregation pipelines, improving processing efficiency and reducing database and application resource use.",
+              "Built an internal streaming CSV library to resolve OutOfMemoryError failures and reduce memory consumption during file processing.",
+              "Automated data pipelines to replace manual operations.",
+              "Diagnosed and resolved critical production incidents through performance testing, observability and collaboration."
+            ]
+          }
         }
-      ]
-    },
-    {
-      "company": "Boavista Technology, Fortaleza - BR",
-      "experience": [
-        {
-          "title": "Junior Software Engineer",
-          "date": "Oct/2023 - Aug/2024",
-          "description": [
-            "Code reviews to ensure code quality and alignment with business rules.",
-            "Maintenance of event-driven file processors using Spring Batch and Kafka.",
-            "Contributed to the development of a file processor and maintained event-driven file cataloging processors using Spring Batch and Kafka.",
-            "Creation of architectural strategies for complex functionalities, ensuring scalability and maintainability.",
-            "Experience with Spring Boot, JPA, JUnit Jupiter, native queries, TDD, and PostgreSQL."
-          ]
-        },
-        {
-          "title": "Trainee Software Engineer",
-          "date": "Dec/2022 - Oct/2023",
-          "description": [
-            "System modernization, including migration of an API from Java 8 to Java 17.",
-            "Creation of a new deployment system with Java 17, improving efficiency and maintainability.",
-            "Development of dynamic and responsive interfaces using React and Angular."
-          ]
+      },
+      "boavista": {
+        "context": "Boavista Tecnologia develops financial reconciliation software connecting payment providers, banks and ERP systems.",
+        "roles": {
+          "junior": {
+            "title": "Junior Software Engineer",
+            "description": [
+              "Built a payment-file processing module for a new card operator, improving file-processing performance.",
+              "Resolved memory leaks through stream processing to stabilize production workloads.",
+              "Migrated core endpoints from a JSF monolith to Spring Boot services, applying domain-driven design principles."
+            ]
+          },
+          "trainee": {
+            "title": "Trainee Software Engineer",
+            "description": [
+              "Contributed to system modernization by migrating an API from Java 8 to Java 17.",
+              "Created a deployment system to support Java 17, improving maintainability.",
+              "Developed responsive interfaces using React and Angular."
+            ]
+          }
         }
-      ]
-    },
-    {
-      "company": "Euroamerican, Jandira - BR",
-      "experience": [
-        {
-          "title": "Infrastructure Analyst",
-          "date": "Oct/2022 - Dec/2022",
-          "description": [
-            "Windows server maintenance, administration of Exchange, DHCP, DNS, backups, AD, firewalls, and proxies.",
-            "Hardware and software installation/configuration, system migrations, and software tool updates."
-          ]
-        },
-        {
-          "title": "Junior Infrastructure Analyst",
-          "date": "Apr/2022 - Oct/2022",
-          "description": [
-            "Windows server maintenance, administration of Exchange, DHCP, DNS, backups, AD, firewalls, and proxies.",
-            "Day-to-day issues involving networks, user support, and file and application storage."
-          ]
-        },
-        {
-          "title": "IT Intern",
-          "date": "Oct/2021 - Apr/2022",
-          "description": [
-            "User support.",
-            "Machine updates and maintenance.",
-            "Department account management.",
-            "Ticket management (GLPI)."
-          ]
+      },
+      "qualyvinil": {
+        "context": "Qualyvinil Tintas is a Brazilian manufacturer of paints, coatings and waterproofing products for the construction industry.",
+        "roles": {
+          "analyst": {
+            "title": "Infrastructure Analyst",
+            "description": [
+              "Administered servers, network infrastructure and backup routines, including switches, Cisco access points and TrueNAS storage.",
+              "Managed Fortinet firewalls, VPN connectivity and user access across Active Directory and Google Workspace.",
+              "Maintained IT assets and workstations, providing technical support and managing service requests through GLPI."
+            ]
+          },
+          "junior": {
+            "title": "Junior Infrastructure Analyst",
+            "description": [
+              "Supported Windows server administration, including Active Directory, DNS, DHCP and backup routines.",
+              "Assisted with network maintenance and file storage management.",
+              "Provided technical support to users and helped maintain the availability of internal IT services."
+            ]
+          },
+          "intern": {
+            "title": "IT Intern",
+            "description": [
+              "Provided technical support, troubleshooting hardware and software issues and maintaining workstations.",
+              "Created user accounts in Active Directory, Google Workspace and ERP systems.",
+              "Logged and tracked support requests through GLPI."
+            ]
+          }
         }
-      ]
+      }
     }
-  ],
-  "academic_education_info": [
-    {
-      "experience": [
-        {
-          "title": "Postgraduate, Software Engineer",
-          "date": "2023 - 2024",
-          "company": "Uniamerica University, São Paulo - BR",
-          "description": []
-        },
-        {
-          "title": "Graduated, System Analysis and Development",
-          "date": "2021 - 2023",
-          "company": "Nove de Julho University, São Paulo - BR",
-          "description": []
-        },
-        {
-          "title": "Technical, IT Maintenance and Support",
-          "date": "2018 - 2020",
-          "company": "Instituto Tecnico de Barueri, Barueri - BR",
-          "description": []
-        }
-      ]
-    }
-  ],
-  "resume": "Software Engineer with solid experience in backend development with Java and Go, specializing in scalable and modern architectures. ",
-  "resume-2": "I have worked on system modernization, CI/CD pipeline creation, event-driven processing with Kafka, and microservices-based architectures.",
-  "resume-3": "I am committed to delivering efficient solutions, with a focus on quality, maintainability, and strategic alignment with business needs.",
+  },
+  "education": {
+    "uniamerica": "Postgraduate Studies in Software Engineering",
+    "uninove": "Systems Analysis and Development",
+    "fieb": "Technical Education in Computer Support and Maintenance"
+  },
   "project-title": "Projects",
-  "project-info": [
-    {
-      "title": "Clean Architecture Example",
-      "description": "This is a example of clean architecture repository.",
-      "uri_github": "/springboot-clean-architecture-example",
-      "tag": [
-        "SpringBoot",
-        "Java 21",
-        "PostgreSQL"
-      ],
-      "isContact": false
+  "projects": {
+    "makai": {
+      "title": "Makai",
+      "description": "Makai is a SaaS platform for water sports schools, supporting check-ins, subscriptions, team organization and financial management.",
+      "responsibility": "Responsible for architecture, backend, infrastructure and integrations, evolving the product from concept to production.",
+      "role": "Creator & Software Engineer",
+      "action": "Visit Makai"
     },
-    {
-      "title": "Notificator",
-      "description": "This is a repository for sending notifications via email, using a messaging service as a trigger for sending.",
-      "uri_github": "/notificator",
-      "tag": [
-        "SpringBoot",
-        "RabbitMQ"
-      ],
-      "isContact": false
-    },
-    {
-      "title": "Music Streamer Api",
-      "description": "This is a repository for uploading and downloading music with a built-in player, allowing users to upload, download, and listen to music.",
-      "uri_github": "/music-streamer-api",
-      "tag": [
-        "SpringBoot",
-        "JPA",
-        "PostgreSQL"
-      ],
-      "isContact": false
-    },
-    {
-      "title": "My Personal Blog",
-      "description": "This repository corresponds to this website.",
-      "uri_github": "/my-personal-blog",
-      "tag": [
-        "React",
-        "TypeScript"
-      ],
-      "isContact": false
-    },
-    {
+    "lead-stream-service": {
       "title": "Lead Stream Service",
-      "description": "Lead Stream Service is a web service for managing schemas and uploading files associated with those schemas.",
-      "uri_github": "/lead-stream-service",
-      "tag": [
-        "Golang",
-        "Huma",
-        "MongoDB"
-      ],
-      "isContact": false
+      "description": "Web service for managing schemas and uploading files associated with them."
     },
-    {
+    "notificator": {
+      "title": "Notificator",
+      "description": "Email notification service triggered by messages from a queue."
+    },
+    "clean-architecture": {
+      "title": "Clean Architecture Example",
+      "description": "Example backend application demonstrating Clean Architecture with Java, Spring Boot and PostgreSQL."
+    },
+    "music-streamer": {
+      "title": "Music Streamer API",
+      "description": "API for uploading, downloading and playing music."
+    },
+    "portfolio": {
+      "title": "Personal Portfolio",
+      "description": "Personal portfolio built with React and TypeScript."
+    },
+    "contact": {
       "title": "Your Project Here",
-      "description": "Do you have a project in mind? Let's make it happen! Contact me and let's discuss how we can bring your idea to life.",
-      "uri_github": "",
-      "tag": [
-        "Contact Me"
-      ],
-      "isContact": true
+      "description": "Have a project in mind? Get in touch and let's discuss how to bring it to life.",
+      "action": "Contact me"
     }
-  ]
+  },
+  "accessibility": {
+    "change_language": "Change language to Portuguese",
+    "email": "Send Vitor an email",
+    "github": "Vitor's GitHub profile",
+    "linkedin": "Vitor's LinkedIn profile",
+    "photo": "Portrait of Vitor Tenório",
+    "resume": "Download Vitor Tenório's resume",
+    "scroll_about": "Go to the About section"
+  },
+  "metadata": {
+    "title": "Vitor Tenório — Senior Software Engineer",
+    "description": "Senior Software Engineer focused on backend services, distributed systems and solution design. Experience with Java, Go and Node.js. Creator of Makai."
+  }
 }

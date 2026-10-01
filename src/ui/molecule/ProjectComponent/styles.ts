@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { globalColor } from '../../../styles/GlobalStyles';
-import ColoredText from '../../atom/ColoredText';
 
 export const ProjectComponentStyles = styled.div`
   display: flex;
@@ -19,7 +18,7 @@ export const ProjectComponentStyles = styled.div`
   }
 `;
 
-export const ProjectStyles = styled.div`
+export const ProjectStyles = styled.a`
   flex-direction: column;
   align-items: flex-start;
   display: flex;
@@ -29,13 +28,14 @@ export const ProjectStyles = styled.div`
   box-sizing: border-box;
   border-radius: 10px;
   background-color: ${globalColor.quinary};
+  text-decoration: none;
 
   @media (max-width: 980px) {
     width: 90%;
   }
 `;
 
-export const ColoredTitleStyles = styled(ColoredText)`
+export const ColoredTitleStyles = styled.h3`
   font-size: 22px;
   font-weight: 600;
   color: ${globalColor.primary};
@@ -117,7 +117,7 @@ export const TitleComponentStyles = styled.div`
   }
 `;
 
-export const ColoredTitleStylesContact = styled(ColoredText)`
+export const ColoredTitleStylesContact = styled.h3`
   font-size: 22px;
   font-weight: 600;
   color: ${globalColor.quaternary};
@@ -164,5 +164,3 @@ export const TitleComponentStylesContact = styled.div`
     margin-top: 15px;
   }
 `;
-
-

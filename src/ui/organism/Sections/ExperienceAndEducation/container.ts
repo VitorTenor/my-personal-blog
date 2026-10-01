@@ -1,106 +1,40 @@
-import { t } from 'i18next';
-
-enum Type {
-  ACADEMIC = 'academic_education_info',
-  PROFESSIONAL = 'professional_experience_info',
-}
+import { useTranslation } from 'react-i18next';
+import {
+  EDUCATION,
+  formatPeriod,
+  PROFESSIONAL_EXPERIENCE,
+} from '../../../../data/profile';
 
 export default function useContainer() {
+  const { i18n, t } = useTranslation();
+
+  function getExperience() {
+    return PROFESSIONAL_EXPERIENCE.map((company) => ({
+      company: company.company,
+      companyDescription: t(`experience.companies.${company.id}.context`),
+      experience: company.roles.map((role) => ({
+        title: t(`experience.companies.${company.id}.roles.${role.id}.title`),
+        date: formatPeriod(role.period, i18n.language),
+        description: t(
+          `experience.companies.${company.id}.roles.${role.id}.description`,
+          { returnObjects: true },
+        ) as string[],
+      })),
+    }));
+  }
+
+  function getEducation() {
+    return [
+      {
+        experience: EDUCATION.map((education) => ({
+          title: t(`education.${education.id}`),
+          date: `${education.start} - ${education.end}`,
+          company: education.institution,
+          description: [],
+        })),
+      },
+    ];
+  }
+
   return { getExperience, getEducation };
-}
-
-function getExperience() {
-  const experienceType = Type.PROFESSIONAL;
-  const lengthComponent: number = parseInt(t(`${experienceType}.length`));
-  const experience_component = [];
-
-  for (let i = 0; i < lengthComponent; i++) {
-    const path = t(`${experienceType}.${i}.path`);
-    const company = t(`${experienceType}.${i}.company`);
-    const experience = [];
-    const lengthExperience: number = parseInt(
-      t(`${experienceType}.${i}.experience.length`),
-    );
-
-    for (let j = 0; j < lengthExperience; j++) {
-      const title = t(`${experienceType}.${i}.experience.${j}.title`);
-      const date = t(`${experienceType}.${i}.experience.${j}.date`);
-      const workType = t(`${experienceType}.${i}.experience.${j}.work_type`);
-
-      const description = [];
-      const lengthDescription: number = parseInt(
-        t(`${experienceType}.${i}.experience.${j}.description.length`),
-      );
-      for (let k = 0; k < lengthDescription; k++) {
-        description.push(
-          t(`${experienceType}.${i}.experience.${j}.description.${k}`),
-        );
-      }
-
-      const experienceItem = {
-        title,
-        date,
-        workType,
-        description,
-      };
-
-      experience.push(experienceItem);
-    }
-
-    const component = {
-      path,
-      company,
-      experience,
-    };
-
-    experience_component.push(component);
-  }
-  return experience_component;
-}
-
-function getEducation() {
-  const experienceType = Type.ACADEMIC;
-  const lengthComponent: number = parseInt(t(`${experienceType}.length`));
-  const experience_component = [];
-
-  for (let i = 0; i < lengthComponent; i++) {
-    const path = t(`${experienceType}.${i}.path`);
-    const experience = [];
-    const lengthExperience: number = parseInt(
-      t(`${experienceType}.${i}.experience.length`),
-    );
-
-    for (let j = 0; j < lengthExperience; j++) {
-      const title = t(`${experienceType}.${i}.experience.${j}.title`);
-      const date = t(`${experienceType}.${i}.experience.${j}.date`);
-      const company = t(`${experienceType}.${i}.experience.${j}.company`);
-
-      const description = [];
-      const lengthDescription: number = parseInt(
-        t(`${experienceType}.${i}.experience.${j}.description.length`),
-      );
-      for (let k = 0; k < lengthDescription; k++) {
-        description.push(
-          t(`${experienceType}.${i}.experience.${j}.description.${k}`),
-        );
-      }
-
-      const experienceItem = {
-        title,
-        date,
-        company,
-        description,
-      };
-
-      experience.push(experienceItem);
-    }
-
-    const component = {
-      path,
-      experience,
-    };
-
-    experience_component.push(component);
-  }
-  return experience_component;
 }

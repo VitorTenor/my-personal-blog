@@ -9,8 +9,8 @@ interface ColoredTextProps {
 
 export default function ColoredText(props: ColoredTextProps): ReactElement {
   return (
-    <label className={props.className} style={props.style}>
+    <span className={props.className} style={props.style}>
       {props.message}
-    </label>
+    </span>
   );
 }
