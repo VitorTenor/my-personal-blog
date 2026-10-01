@@ -1,172 +1,140 @@
 {
-  "profession": "engenheiro de software",
-  "study": "engenheiro de software",
-  "welcome": "Oi, Eu sou o Vitor!",
+  "hero": { "role": "Engenheiro de Software Sênior na CI&T" },
+  "welcome": "Oi, eu sou o Vitor!",
+  "about": [
+    "Engenheiro de Software Backend Sênior com experiência em infraestrutura, com foco em sistemas distribuídos, design de soluções e confiabilidade em produção.",
+    "Experiência na modernização de serviços, otimização do processamento de dados e resolução de problemas em produção com Java, Go, Node.js e Spring Boot. A atuação atual inclui o desenho de soluções entre serviços e a criação de habilidades reutilizáveis para agentes com Cursor e Claude Code.",
+    "Criador do Makai, uma plataforma SaaS para escolas de esportes aquáticos, responsável pela arquitetura, backend, infraestrutura, integrações e evolução do produto."
+  ],
   "professional_experience": "Experiência Profissional",
   "academic_education": "Formação Acadêmica",
-  "professional_experience_info": [
-    {
-      "company": "CI&T, São Paulo - BR",
-      "experience": [
-        {
-          "title": "Engenheiro de Software Pleno",
-          "date": "Ago/2022 - Presente",
-          "description": [
-            "Desenvolvimento backend com Java e Spring Boot.",
-            "Scripts de carga/atualização de dados usando Python e JavaScript.",
-            "Pipelines de CI/CD com Azure DevOps, ArgoCD e New Relic.",
-            "CosmosDB para armazenamento e gerenciamento de dados."
-          ]
+  "experience": {
+    "companies": {
+      "cit": {
+        "context": "A CI&T é uma empresa global de serviços de tecnologia. Atuação em serviços backend e sistemas distribuídos para a AB InBev.",
+        "roles": {
+          "senior": {
+            "title": "Engenheiro de Software Sênior",
+            "description": [
+              "Lidera o desenho técnico de funcionalidades que envolvem múltiplos serviços, definindo responsabilidades, integrações e fluxos de ponta a ponta.",
+              "Conduz decisões técnicas do produto entre serviços backend, equilibrando manutenibilidade, confiabilidade e desempenho.",
+              "Cria habilidades reutilizáveis para agentes e fluxos de trabalho com Cursor e Claude Code para apoiar o desenvolvimento assistido por IA."
+            ]
+          },
+          "software-engineer": {
+            "title": "Engenheiro de Software Pleno",
+            "description": [
+              "Migrou regras de negócio para pipelines de agregação do MongoDB, melhorando a eficiência do processamento e reduzindo o uso de recursos do banco de dados e da aplicação.",
+              "Desenvolveu uma biblioteca interna de processamento de CSV em streaming para resolver falhas de OutOfMemoryError e reduzir o consumo de memória.",
+              "Automatizou pipelines de dados para substituir operações manuais.",
+              "Diagnosticou e resolveu incidentes críticos em produção por meio de testes de desempenho, observabilidade e colaboração."
+            ]
+          }
         }
-      ]
-    },
-    {
-      "company": "Boavista Tecnologia, Fortaleza - BR",
-      "experience": [
-        {
-          "title": "Engenheiro de Software Junior",
-          "date": "Out/2023 - Ago/2024",
-          "description": [
-            "Revisão de código para garantir a qualidade e o alinhamento com as regras de negócio.",
-            "Manutenção de processadores de arquivos orientados a eventos usando Spring Batch e Kafka.",
-            "Contribuição no desenvolvimento de um processador de arquivos e manutenção de processadores de catalogação de arquivos orientados a eventos com Spring Batch e Kafka.",
-            "Criação de estratégias arquiteturais para funcionalidades complexas, garantindo escalabilidade e manutenibilidade.",
-            "Experiência com Spring Boot, JPA, JUnit Jupiter, queries nativas, TDD e PostgreSQL."
-          ]
-        },
-        {
-          "title": "Engenheiro de Software Trainee",
-          "date": "Dez/2022 - Out/2023",
-          "description": [
-            "Modernização de sistemas, incluindo a migração de uma API de Java 8 para Java 17.",
-            "Criação de um novo sistema de implantação com Java 17, melhorando a eficiência e a manutenibilidade.",
-            "Desenvolvimento de interfaces dinâmicas e responsivas usando React e Angular."
-          ]
+      },
+      "boavista": {
+        "context": "A Boavista Tecnologia desenvolve software de conciliação financeira que conecta provedores de pagamento, bancos e sistemas ERP.",
+        "roles": {
+          "junior": {
+            "title": "Engenheiro de Software Júnior",
+            "description": [
+              "Desenvolveu um módulo de processamento de arquivos de pagamento para uma nova operadora de cartões, melhorando o desempenho do processamento.",
+              "Resolveu vazamentos de memória com processamento em streaming para estabilizar as cargas de trabalho em produção.",
+              "Migrou endpoints centrais de um monólito JSF para serviços Spring Boot, aplicando princípios de design orientado ao domínio."
+            ]
+          },
+          "trainee": {
+            "title": "Engenheiro de Software Trainee",
+            "description": [
+              "Contribuiu para a modernização de sistemas com a migração de uma API de Java 8 para Java 17.",
+              "Criou um sistema de implantação com suporte a Java 17, melhorando a manutenibilidade.",
+              "Desenvolveu interfaces responsivas com React e Angular."
+            ]
+          }
         }
-      ]
-    },
-    {
-      "company": "Euroamerican, Jandira - BR",
-      "experience": [
-        {
-          "title": "Analista de Infraestrutura Pleno",
-          "date": "Out/2022 - Dez/2022",
-          "description": [
-            "Manutenção de servidores Windows, administração de Exchange, DHCP, DNS, backups, AD, firewalls e proxies.",
-            "Realizei instalação/configuração de hardware e software, migrações de sistemas e atualizações de ferramentas de software."
-          ]
-        },
-        {
-          "title": "Analista de Infraestrutura Junior",
-          "date": "Abr/2022 - Out/2022",
-          "description": [
-            "Manutenção de servidores Windows, administração de Exchange, DHCP, DNS, backups, AD, firewalls e proxies.",
-            "Problemas do dia a dia envolvendo redes, suporte a usuários e armazenamento de arquivos e aplicativos."
-          ]
-        },
-        {
-          "title": "Estagiario de Infraestrutura",
-          "date": "Out/2021 - Abr/2022",
-          "description": [
-            "Suporte a usuários.",
-            "Atualização e manutenção de máquinas.",
-            "Gerenciamento de contas de departamento.",
-            "Gerenciamento de tickets (GLPI)."
-          ]
+      },
+      "qualyvinil": {
+        "context": "A Qualyvinil Tintas é uma fabricante brasileira de tintas, revestimentos e impermeabilizantes para a construção civil.",
+        "roles": {
+          "analyst": {
+            "title": "Analista de Infraestrutura",
+            "description": [
+              "Administrou servidores, infraestrutura de rede e rotinas de backup, incluindo switches, pontos de acesso Cisco e armazenamento TrueNAS.",
+              "Gerenciou firewalls Fortinet, conexões VPN e acessos de usuários no Active Directory e Google Workspace.",
+              "Manteve ativos de TI e estações de trabalho, prestando suporte técnico e gerenciando solicitações pelo GLPI."
+            ]
+          },
+          "junior": {
+            "title": "Analista de Infraestrutura Júnior",
+            "description": [
+              "Apoiou a administração de servidores Windows, incluindo Active Directory, DNS, DHCP e rotinas de backup.",
+              "Auxiliou na manutenção da rede e na gestão do armazenamento de arquivos.",
+              "Prestou suporte técnico aos usuários e apoiou a disponibilidade dos serviços internos de TI."
+            ]
+          },
+          "intern": {
+            "title": "Estagiário de TI",
+            "description": [
+              "Prestou suporte técnico, solucionando problemas de hardware e software e realizando a manutenção de estações de trabalho.",
+              "Criou contas de usuários no Active Directory, Google Workspace e sistemas ERP.",
+              "Registrou e acompanhou solicitações de suporte pelo GLPI."
+            ]
+          }
         }
-      ]
+      }
     }
-  ],
-  "academic_education_info": [
-    {
-      "experience": [
-        {
-          "title": "Pós-Graduação em Engenharia de Software",
-          "date": "2023 - 2024",
-          "company": "Uniamerica, BR",
-          "description": []
-        },
-        {
-          "title": "Graduação em Análise e Desenvolvimento de Sistemas",
-          "date": "2021 - 2023",
-          "company": "Universidade Nove de Julho, São Paulo, BR",
-          "description": []
-        },
-        {
-          "title": "Técnico em Manutenção e Suporte em Informática",
-          "date": "2018 - 2020",
-          "company": "Instituto Tecnico de Barueri, Barueri, BR",
-          "description": []
-        }
-      ]
-    }
-  ],
-  "resume": "Engenheiro de Software com sólida experiência em desenvolvimento backend com Java e Go, especializado em arquiteturas escaláveis e modernas.",
-  "resume-2": "Atuei na modernização de sistemas, criação de pipelines de CI/CD, processamento orientado a eventos com Kafka e arquiteturas baseadas em microsserviços.",
-  "resume-3": "Comprometido em entregar soluções eficientes, com foco em qualidade, manutenibilidade e alinhamento estratégico com as necessidades do negócio.",
+  },
+  "education": {
+    "uniamerica": "Pós-graduação em Engenharia de Software",
+    "uninove": "Análise e Desenvolvimento de Sistemas",
+    "fieb": "Formação técnica em Manutenção e Suporte em Informática"
+  },
   "project-title": "Projetos",
-  "project-info": [
-    {
-      "title": "Clean Architecture Example",
-      "description": "Esse é um repositorio exemplo do uso de arquitetura limpa.",
-      "uri_github": "/springboot-clean-architecture-example",
-      "tag": [
-        "SpringBoot",
-        "Java 21",
-        "PostgreSQL"
-      ],
-      "isContact": false
+  "projects": {
+    "makai": {
+      "title": "Makai",
+      "description": "Makai é uma plataforma SaaS para escolas de esportes aquáticos, com recursos de check-in, assinaturas, organização de equipes e gestão financeira.",
+      "responsibility": "Responsável pela arquitetura, backend, infraestrutura e integrações, conduzindo a evolução do produto da concepção à produção.",
+      "role": "Criador e Engenheiro de Software",
+      "action": "Conhecer o Makai"
     },
-    {
-      "title": "Notificator",
-      "description": "Esse é um repositorio de envio de notifições via email, utilizando um serviço de mensageria como gatilho do envio.",
-      "uri_github": "/notificator",
-      "tag": [
-        "SpringBoot",
-        "RabbitMQ"
-      ],
-      "isContact": false
-    },
-    {
-      "title": "Music Streamer Api",
-      "description": "Esse é um repositorio de upload e download de músicas com funcionalidade de player permite aos usuários enviar, baixar e ouvir músicas.",
-      "uri_github": "/music-streamer-api",
-      "tag": [
-        "SpringBoot",
-        "JPA",
-        "PostgreSQL"
-      ],
-      "isContact": false
-    },
-    {
-      "title": "My Personal Blog",
-      "description": "Esse repositório se refere a esse website.",
-      "uri_github": "/my-personal-blog",
-      "tag": [
-        "React",
-        "TypeScript"
-      ],
-      "isContact": false
-    },
-    {
+    "lead-stream-service": {
       "title": "Lead Stream Service",
-      "description": "O Lead Stream Service é um serviço web para gerenciar schemas e carregar arquivos associados a esses schemas.",
-      "uri_github": "/lead-stream-service",
-      "tag": [
-        "Golang",
-        "Huma",
-        "MongoDB"
-      ],
-      "isContact": false
+      "description": "Serviço web para gerenciar schemas e fazer upload de arquivos associados a eles."
     },
-    {
+    "notificator": {
+      "title": "Notificator",
+      "description": "Serviço de notificações por e-mail acionado por mensagens de uma fila."
+    },
+    "clean-architecture": {
+      "title": "Clean Architecture Example",
+      "description": "Aplicação backend de exemplo que demonstra Clean Architecture com Java, Spring Boot e PostgreSQL."
+    },
+    "music-streamer": {
+      "title": "Music Streamer API",
+      "description": "API para upload, download e reprodução de músicas."
+    },
+    "portfolio": {
+      "title": "Personal Portfolio",
+      "description": "Portfólio pessoal desenvolvido com React e TypeScript."
+    },
+    "contact": {
       "title": "Seu Projeto Aqui",
-      "description": "Tem um projeto em mente? Vamos torná-lo realidade! Entre em contato comigo e vamos discutir como podemos dar vida à sua ideia.",
-      "uri_github": "",
-      "tag": [
-        "Fale Comigo"
-      ],
-      "isContact": true
+      "description": "Tem um projeto em mente? Entre em contato para conversarmos sobre como transformá-lo em realidade.",
+      "action": "Fale comigo"
     }
-  ]
+  },
+  "accessibility": {
+    "change_language": "Mudar idioma para inglês",
+    "email": "Enviar um e-mail para Vitor",
+    "github": "Perfil de Vitor no GitHub",
+    "linkedin": "Perfil de Vitor no LinkedIn",
+    "photo": "Retrato de Vitor Tenório",
+    "resume": "Baixar o currículo de Vitor Tenório",
+    "scroll_about": "Ir para a seção Sobre"
+  },
+  "metadata": {
+    "title": "Vitor Tenório — Engenheiro de Software Sênior",
+    "description": "Engenheiro de Software Sênior com foco em backend, sistemas distribuídos e design de soluções. Experiência com Java, Go e Node.js. Criador do Makai."
+  }
 }

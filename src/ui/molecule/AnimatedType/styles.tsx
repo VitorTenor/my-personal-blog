@@ -39,6 +39,11 @@ export const ColoredTextTypeBar = styled(ColoredText)`
   @media (max-width: 550px) {
     font-size: 20px;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    display: none;
+    animation: none;
+  }
 `;
 
 export const AnimatedTypeStyles = styled.div``;

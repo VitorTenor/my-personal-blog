@@ -7,7 +7,6 @@ import {
   LabelType,
 } from './styles.tsx';
 
-
 export default function AnimatedType(props: AnimatedTypeProps): ReactElement {
   const text = useContainer(props);
   return (

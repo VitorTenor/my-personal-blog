@@ -1,74 +1,74 @@
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export interface AnimatedTypeProps {
-  messages: any[];
+  messages: string[];
 }
 
-export default function useContainer (props : AnimatedTypeProps) : string {
+export default function useContainer(props: AnimatedTypeProps): string {
+  const { i18n, t } = useTranslation();
   const [text, setText] = useState('');
-  const [isTyping, setIsTyping] = useState(true);
-  let message: string = '';
-  const { t } = useTranslation();
-  let arrayIndex: number = 0;
+  const [reduceMotion, setReduceMotion] = useState(false);
+  const messageKeys = useMemo(() => props.messages.join('|'), [props.messages]);
 
   useEffect(() => {
-    let currentIndex = 0;
-    let timer: NodeJS.Timeout;
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const updatePreference = () => setReduceMotion(mediaQuery.matches);
 
-    const typeText = (): void => {
-      message = t(props.messages[arrayIndex]);
+    updatePreference();
+    mediaQuery.addEventListener('change', updatePreference);
 
-      if (currentIndex <= message.length) {
-        if (currentIndex != -1) {
-          setText(message.slice(0, currentIndex));
-          currentIndex++;
-          timer = setTimeout(typeText, 100); // Ajuste a velocidade da digitação aqui (por exemplo, 300ms)
-        } else {
-          currentIndex++;
-          typeText();
-        }
-      } else {
-        setIsTyping(false);
-        clearTimeout(timer);
-        timer = setTimeout(eraseText, 2000); // Espera antes de começar a apagar
-      }
-    };
+    return () => mediaQuery.removeEventListener('change', updatePreference);
+  }, []);
 
-    const eraseText = (): void => {
-      message = t(props.messages[arrayIndex]);
-      if (currentIndex >= 0) {
-        setText(message.slice(0, currentIndex));
-        currentIndex--;
-        timer = setTimeout(eraseText, 200); // Ajuste a velocidade da exclusão aqui (por exemplo, 300ms)
-      } else {
-        validateArrayIndex();
-        setIsTyping(true);
-        clearTimeout(timer);
-        timer = setTimeout(typeText, 500); // Espera antes de começar a digitar novamente
-      }
-    };
+  useEffect(() => {
+    const messages = messageKeys.split('|').map((key) => t(key));
 
-    const validateArrayIndex = (): void => {
-      if (arrayIndex == props.messages.length - 1) {
-        arrayIndex = 0;
-      } else {
-        arrayIndex = arrayIndex + 1;
-      }
-    };
-
-    if (message && isTyping) {
-      typeText();
-    } else {
-      setText('');
-      eraseText();
+    if (reduceMotion) {
+      setText(messages[0]);
+      return undefined;
     }
 
-    return (): void => {
-      message = t(props.messages[arrayIndex]);
-      clearTimeout(timer);
+    let messageIndex = 0;
+    let characterIndex = 0;
+    let isDeleting = false;
+    let timer: ReturnType<typeof setTimeout>;
+
+    const animate = () => {
+      const message = messages[messageIndex];
+
+      if (!isDeleting) {
+        characterIndex += 1;
+        setText(message.slice(0, characterIndex));
+
+        if (characterIndex === message.length) {
+          isDeleting = true;
+          timer = setTimeout(animate, 2000);
+          return;
+        }
+
+        timer = setTimeout(animate, 100);
+        return;
+      }
+
+      characterIndex -= 1;
+      setText(message.slice(0, characterIndex));
+
+      if (characterIndex === 0) {
+        isDeleting = false;
+        messageIndex = (messageIndex + 1) % messages.length;
+        timer = setTimeout(animate, 500);
+        return;
+      }
+
+      timer = setTimeout(animate, 200);
     };
-  }, [message]);
+
+    setText('');
+    animate();
+
+    return () => clearTimeout(timer);
+  }, [i18n.language, messageKeys, reduceMotion, t]);
 
   return text;
 }

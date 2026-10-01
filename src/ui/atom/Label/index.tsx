@@ -6,5 +6,5 @@ interface LabelProps {
 }
 
 export default function Label(props: LabelProps): ReactElement {
-  return <label className={props.className}>{props.message}</label>;
+  return <span className={props.className}>{props.message}</span>;
 }

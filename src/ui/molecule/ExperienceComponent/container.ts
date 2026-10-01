@@ -11,13 +11,12 @@ export const SPAN_STYLE: CSSProperties = {
 export interface ExperienceComponentProps {
   title: string;
   date: string;
-  workType: string;
   description: string[];
 }
 
 export interface ExperienceElementProps {
-  path: string;
   company: string;
+  companyDescription: string;
   experience: ExperienceComponentProps[];
 }
 

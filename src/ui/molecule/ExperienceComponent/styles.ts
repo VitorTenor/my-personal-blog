@@ -6,7 +6,7 @@ export const ExperienceComponentStyles = styled.div`
   padding: 0 15px 0 15px;
 `;
 
-export const ColoredCompany = styled(ColoredText)`
+export const ColoredCompany = styled.h3`
   color: ${globalColor.primary};
   margin-top: 30px;
   margin-left: 5%;
@@ -23,7 +23,7 @@ export const ColoredCompany = styled(ColoredText)`
   }
 `;
 
-export const ColoredWorkTitle = styled(ColoredText)`
+export const ColoredWorkTitle = styled.h4`
   font-size: 20px;
   color: ${globalColor.secondary};
   font-weight: 600;
@@ -50,6 +50,13 @@ export const ColoredDescription = styled(ColoredText)`
   margin-bottom: 10px;
   display: flex;
   word-break: break-word;
+`;
+
+export const CompanyDescription = styled.p`
+  color: ${globalColor.secondary};
+  margin: 10px 5% 20px;
+  font-size: 16px;
+  line-height: 1.5;
 `;
 
 export const ExperienceStyles = styled.div`

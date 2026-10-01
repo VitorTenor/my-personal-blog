@@ -50,7 +50,7 @@ export const EducationStyles = styled.div`
   }
 `;
 
-export const TitleStyles = styled.h1`
+export const TitleStyles = styled.h2`
   font-size: 30px;
   text-align: left;
   margin-left: 20px;

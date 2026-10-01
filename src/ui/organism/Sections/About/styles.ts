@@ -19,6 +19,9 @@ export const ProfileImage = styled.img`
   margin-top: 20px;
   height: 400px;
   width: 400px;
+  flex: 0 0 400px;
+  object-fit: cover;
+  object-position: center;
   border-color: ${globalColor.secondary};
   border-radius: 50%;
   border-style: solid;
@@ -44,7 +47,7 @@ export const TextAbout = styled.div`
   font-size: 25px;
   color: ${globalColor.secondary};
   margin-left: 35px;
-  
+
   @media (max-width: 1700px) {
     font-size: 22px;
   }
@@ -59,8 +62,7 @@ export const TextAbout = styled.div`
   }
 `;
 
-
-export const TitleAbout = styled.h1`
+export const TitleAbout = styled.h2`
   font-size: 60px;
   color: ${globalColor.primary};
 

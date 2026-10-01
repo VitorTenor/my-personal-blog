@@ -3,9 +3,11 @@ import { ReactElement } from 'react';
 export interface ProjectInfo {
   title: string;
   description: string;
+  responsibility: string;
+  actionLabel: string;
   tag: string[];
-  github: string;
-  isContact: string;
+  url: string;
+  isContact: boolean;
 }
 
 export interface ProjectComponentProps {

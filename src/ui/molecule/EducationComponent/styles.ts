@@ -6,7 +6,7 @@ export const EducationComponentStyles = styled.div`
   padding: 0 15px 0 15px;
 `;
 
-export const ColoredTitle = styled(ColoredText)`
+export const ColoredTitle = styled.h3`
   color: ${globalColor.primary};
   margin-top: 30px;
   font-size: 20px;
